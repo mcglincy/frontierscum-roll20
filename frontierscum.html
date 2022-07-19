@@ -22,15 +22,15 @@
     <div class="name-block">
       <div class="fields"> 
         <div class="field-row">
-          <input type="text" name="name" placeholder="Name"/>
+          <input type="text" name="name" placeholder="Name" spellcheck="false"/>
         </div>
         <div class="field-row">
           <label>A</label>
-          <input type="text" name="class" placeholder="Class"/>
+          <input type="text" name="class" placeholder="Class" spellcheck="false"/>
         </div>
         <div class="field-row">
           <label>WANTED FOR</label>
-          <input type="text" name="wanted_for" placeholder="Wanted for"/>
+          <input type="text" name="wanted_for" placeholder="Wanted for" spellcheck="false"/>
         </div>
       </div>
       <div class="rewards">
@@ -75,7 +75,7 @@
             <input type="checkbox" name="miserable"/>
           </div>
           <div class="non-checkbox">Miserable (
-            <input type="text" name="misery"/>&nbsp;). You don't recover HP from rest.
+            <input type="text" name="misery" spellcheck="false"/>&nbsp;). You don't recover HP from rest.
           </div>
         </div>
         <div class="condition-row drunk"> 
@@ -85,20 +85,41 @@
           <div class="non-checkbox">
             Drunk.
             Swap your 
-            <input type="text" name="drunk_stat_1"/>&nbsp;and
-            <input type="text" name="drunk_stat_2"/>&nbsp;until sober.
+            <input type="text" name="drunk_stat_1" spellcheck="false"/>&nbsp;and
+            <input type="text" name="drunk_stat_2" spellcheck="false"/>&nbsp;until sober.
           </div>
         </div>
         <div class="notes">
-          <textarea placeholder="Notes and such"></textarea>
+          <textarea placeholder="Notes and such" spellcheck="false"></textarea>
         </div>
         <div class="notes">
-          <textarea placeholder="More of 'em"></textarea>
+          <textarea placeholder="More of 'em" spellcheck="false"></textarea>
         </div>
       </div>
     </div>
-    <div class="hp-block">
-       hp block goes here</div>
+    <div class="hp-block"> 
+      <div class="stat-block hp"> 
+        <div class="name">
+           HP</div>
+        <div class="value"> 
+          <input type="text" inputmode="numeric" name="hp"/>
+        </div>
+      </div>
+      <div class="stat-block max-hp"> 
+        <div class="name">
+           MAX HP</div>
+        <div class="value"> 
+          <input type="text" inputmode="numeric" name="max_hp"/>
+        </div>
+      </div>
+      <div class="stat-block aces"> 
+        <div class="name">
+           ACES</div>
+        <div class="value"> 
+          <input type="text" inputmode="numeric" name="aces"/>
+        </div>
+      </div>
+    </div>
     <div class="equipment-block">equipment block goes here</div>
   </div>
 </div>

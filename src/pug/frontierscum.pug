@@ -22,13 +22,13 @@ link(rel='stylesheet', href='frontierscum.css')
     .name-block
       .fields 
         .field-row
-          input(type='text', name='name', placeholder='Name')
+          input(type='text', name='name', placeholder='Name', spellcheck='false')
         .field-row
           label A
-          input(type='text', name='class', placeholder='Class')
+          input(type='text', name='class', placeholder='Class', spellcheck='false')
         .field-row
           label WANTED FOR
-          input(type='text', name='wanted_for', placeholder='Wanted for')
+          input(type='text', name='wanted_for', placeholder='Wanted for', spellcheck='false')
       .rewards
         label REWARDS 
         textarea
@@ -60,7 +60,7 @@ link(rel='stylesheet', href='frontierscum.css')
             input(type='checkbox', name='miserable')
           .non-checkbox
             | Miserable (
-            input(type='text', name='misery')
+            input(type='text', name='misery', spellcheck='false')
             | &nbsp;). You don't recover HP from rest.
         .condition-row.drunk 
           .checkbox
@@ -68,15 +68,32 @@ link(rel='stylesheet', href='frontierscum.css')
           .non-checkbox
             | Drunk.
             | Swap your 
-            input(type='text', name='drunk_stat_1')
+            input(type='text', name='drunk_stat_1', spellcheck='false')
             | &nbsp;and
-            input(type='text', name='drunk_stat_2')
+            input(type='text', name='drunk_stat_2', spellcheck='false')
             | &nbsp;until sober.
         .notes
-          textarea(placeholder="Notes and such")
+          textarea(placeholder="Notes and such", spellcheck='false')
         .notes
-          textarea(placeholder="More of 'em")
+          textarea(placeholder="More of 'em", spellcheck='false')
+
     .hp-block 
-      | hp block goes here
+      .stat-block.hp 
+        .name 
+          | HP
+        .value 
+          input(type='text', inputmode='numeric', name='hp')
+      .stat-block.max-hp 
+        .name 
+          | MAX HP
+        .value 
+          input(type='text', inputmode='numeric', name='max_hp')
+      .stat-block.aces 
+        .name 
+          | ACES
+        .value 
+          input(type='text', inputmode='numeric', name='aces')
+
+
     .equipment-block
       | equipment block goes here

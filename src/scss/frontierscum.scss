@@ -3,7 +3,8 @@
 $cursive-font: 'Satisfy', cursive;
 $logo-font: 'Smokum', cursive;
 $slab-font: 'Ultra', serif;
-$label-font: 'Smokum', cursive;
+//$label-font: 'Smokum', cursive;
+$label-font: 'Ultra', serif;
 $mono-font: 'Inconsolata', monospace;
 $serif-font: 'Alegreya', serif;
 $border: 2px solid black;
@@ -16,9 +17,20 @@ $light-gray: #eeeeee;
   border: 1px solid black;
   padding: 20px;
 
+  input[type='number'],
+  input[type='text'] {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: $dotted;
+    font-family: $mono-font;
+    text-align: center;
+  }
+
   textarea {
     background-color: $light-gray;
     border: none;
+    font-family: $mono-font;
     resize: none;
   }
 
@@ -26,7 +38,7 @@ $light-gray: #eeeeee;
     background-color: black;
     color: white;
     font-family: $label-font;
-    font-size: 1.3em;
+    font-size: 0.8em;
     text-align: center;
     text-transform: uppercase;
   }
@@ -35,16 +47,18 @@ $light-gray: #eeeeee;
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
     .fs-logo {
-      border-bottom: $border;
-      border-top: $border;
+      border-bottom: 4px solid black;
+      border-top: 4px solid black;
       font-family: $logo-font;
       font-size: 2.0em;
       line-height: 0.9em;
+      padding-top: 2px;
     }
     .wanted {
       font-family: $slab-font;
-      font-size: 6.5em;
+      font-size: 6.0em;
       line-height: 0.8em;
     }
     .dead-or-alive {
@@ -67,19 +81,15 @@ $light-gray: #eeeeee;
         width: 100%;
         label {
           font-family: $label-font;
-          font-size: 1.2em;
+          font-size: 0.7em;
           margin-right: 4px;
+        }
+        input {
+          flex: 1;
         }
         .field-row {
           display: flex;
           width: 100%;
-          input {
-            border: 0;
-            outline: 0;
-            background: transparent;
-            border-bottom: $dotted;            
-            flex: 1;
-          }
         }
       }
       .rewards {
@@ -88,7 +98,7 @@ $light-gray: #eeeeee;
         text-align: center;
         label {
           font-family: $label-font;
-          font-size: 1.5em;
+          font-size: 0.9em;
         }
         textarea {
           width: 100px;
@@ -97,6 +107,7 @@ $light-gray: #eeeeee;
     }
     .abilities-block {
       display: flex;
+      margin-bottom: 10px;
       .ability-col {
         display: flex;
         flex: 0 0 120;
@@ -196,7 +207,24 @@ $light-gray: #eeeeee;
       }
     }
     .hp-block {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 10px;
+      .stat-block {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        input {
+          width: 100px;
+        }
+        .name {
+          font-family: $label-font;
+          font-size: 1.2em;
+        }
+        .value {
 
+        }
+      }
     }
     .equipment-block {
 

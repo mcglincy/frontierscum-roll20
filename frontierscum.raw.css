@@ -3,16 +3,26 @@
   border: 1px solid black;
   padding: 20px;
 }
+.frontierscum input[type=number],
+.frontierscum input[type=text] {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px dotted black;
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+}
 .frontierscum textarea {
   background-color: #eeeeee;
   border: none;
+  font-family: "Inconsolata", monospace;
   resize: none;
 }
 .frontierscum .top-label {
   background-color: black;
   color: white;
-  font-family: "Smokum", cursive;
-  font-size: 1.3em;
+  font-family: "Ultra", serif;
+  font-size: 0.8em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -20,17 +30,19 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 .frontierscum .char-sheet-header .fs-logo {
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
+  border-bottom: 4px solid black;
+  border-top: 4px solid black;
   font-family: "Smokum", cursive;
   font-size: 2em;
   line-height: 0.9em;
+  padding-top: 2px;
 }
 .frontierscum .char-sheet-header .wanted {
   font-family: "Ultra", serif;
-  font-size: 6.5em;
+  font-size: 6em;
   line-height: 0.8em;
 }
 .frontierscum .char-sheet-header .dead-or-alive {
@@ -53,20 +65,16 @@
   width: 100%;
 }
 .frontierscum .char-sheet-body .name-block .fields label {
-  font-family: "Smokum", cursive;
-  font-size: 1.2em;
+  font-family: "Ultra", serif;
+  font-size: 0.7em;
   margin-right: 4px;
+}
+.frontierscum .char-sheet-body .name-block .fields input {
+  flex: 1;
 }
 .frontierscum .char-sheet-body .name-block .fields .field-row {
   display: flex;
   width: 100%;
-}
-.frontierscum .char-sheet-body .name-block .fields .field-row input {
-  border: 0;
-  outline: 0;
-  background: transparent;
-  border-bottom: 1px dotted black;
-  flex: 1;
 }
 .frontierscum .char-sheet-body .name-block .rewards {
   flex: 0 0 50px;
@@ -74,14 +82,15 @@
   text-align: center;
 }
 .frontierscum .char-sheet-body .name-block .rewards label {
-  font-family: "Smokum", cursive;
-  font-size: 1.5em;
+  font-family: "Ultra", serif;
+  font-size: 0.9em;
 }
 .frontierscum .char-sheet-body .name-block .rewards textarea {
   width: 100px;
 }
 .frontierscum .char-sheet-body .abilities-block {
   display: flex;
+  margin-bottom: 10px;
 }
 .frontierscum .char-sheet-body .abilities-block .ability-col {
   display: flex;
@@ -177,4 +186,21 @@
   border: none;
   height: 100%;
   width: 100%;
+}
+.frontierscum .char-sheet-body .hp-block {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.frontierscum .char-sheet-body .hp-block .stat-block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.frontierscum .char-sheet-body .hp-block .stat-block input {
+  width: 100px;
+}
+.frontierscum .char-sheet-body .hp-block .stat-block .name {
+  font-family: "Ultra", serif;
+  font-size: 1.2em;
 }
