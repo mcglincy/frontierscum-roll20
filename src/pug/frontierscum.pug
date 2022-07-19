@@ -1,0 +1,67 @@
+link(rel='stylesheet', href='frontierscum.css')
+
+.frontierscum
+  .char-sheet-header
+    .char-sheet-logo 
+    .dead-or-alive
+      label.radio-visible
+        input(type='radio', name='dead_or_alive', value='dead_or_alive')
+        | &nbsp;Dead or Alive&nbsp;
+      | /
+      label.radio-visible
+        input(type='radio', name='dead_or_alive', value='dead')
+        | &nbsp;Dead&nbsp;
+      | /
+      label.radio-visible
+        input(type='radio', name='dead_or_alive', value='alive')
+        | &nbsp;Alive&nbsp;
+  .char-sheet-body
+    .rewards-block
+      | rewards block
+    .abilities-block
+      .ability-col
+        .ability.grit
+          .top-label.name Grit
+          .value
+            input(type='text', inputmode='numeric', name='grit')
+        .ability.slick
+          .top-label.name Slick
+          .value
+            input(type='text', inputmode='numeric', name='slick')
+        .ability.wits
+          .top-label.name Wits
+          .value
+            input(type='text', inputmode='numeric', name='wits')
+        .ability.luck
+          .top-label.name Luck
+          .value
+            input(type='text', inputmode='numeric', name='luck')          
+      .portrait-col
+        .portrait-inner
+          img(src='img/portrait-placeholder.jpg')
+      .condition-col
+        .top-label.conditions-and-notes Conditions & Notes
+        .condition-row.miserable 
+          .checkbox
+            input(type='checkbox', name='miserable')
+          .non-checkbox
+            | Miserable (
+            input(type='text', name='misery')
+            | &nbsp;). You don't recover HP from rest.
+        .condition-row.drunk 
+          .checkbox
+            input(type='checkbox', name='drunk')
+          .non-checkbox
+            | Drunk.
+            | Swap your 
+            input(type='text', name='drunk_stat_1')
+            | &nbsp;and
+            input(type='text', name='drunk_stat_2')
+            | &nbsp;until sober.
+        .notes
+          textarea
+        .notes
+          textarea
+    .hp-block 
+
+    .equipment-block

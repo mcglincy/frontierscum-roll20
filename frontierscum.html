@@ -1,0 +1,82 @@
+
+<link rel="stylesheet" href="frontierscum.css"/>
+<div class="frontierscum">
+  <div class="char-sheet-header">
+    <div class="char-sheet-logo"> </div>
+    <div class="dead-or-alive">
+      <label class="radio-visible">
+        <input type="radio" name="dead_or_alive" value="dead_or_alive"/>&nbsp;Dead or Alive&nbsp;
+      </label>/
+      <label class="radio-visible">
+        <input type="radio" name="dead_or_alive" value="dead"/>&nbsp;Dead&nbsp;
+      </label>/
+      <label class="radio-visible">
+        <input type="radio" name="dead_or_alive" value="alive"/>&nbsp;Alive&nbsp;
+      </label>
+    </div>
+  </div>
+  <div class="char-sheet-body">
+    <div class="rewards-block">rewards block</div>
+    <div class="abilities-block">
+      <div class="ability-col">
+        <div class="ability grit">
+          <div class="top-label name">Grit</div>
+          <div class="value">
+            <input type="text" inputmode="numeric" name="grit"/>
+          </div>
+        </div>
+        <div class="ability slick">
+          <div class="top-label name">Slick</div>
+          <div class="value">
+            <input type="text" inputmode="numeric" name="slick"/>
+          </div>
+        </div>
+        <div class="ability wits">
+          <div class="top-label name">Wits</div>
+          <div class="value">
+            <input type="text" inputmode="numeric" name="wits"/>
+          </div>
+        </div>
+        <div class="ability luck">
+          <div class="top-label name">Luck</div>
+          <div class="value">
+            <input type="text" inputmode="numeric" name="luck"/>
+          </div>
+        </div>
+      </div>
+      <div class="portrait-col">
+        <div class="portrait-inner"><img src="img/portrait-placeholder.jpg"/></div>
+      </div>
+      <div class="condition-col">
+        <div class="top-label conditions-and-notes">Conditions & Notes</div>
+        <div class="condition-row miserable"> 
+          <div class="checkbox">
+            <input type="checkbox" name="miserable"/>
+          </div>
+          <div class="non-checkbox">Miserable (
+            <input type="text" name="misery"/>&nbsp;). You don't recover HP from rest.
+          </div>
+        </div>
+        <div class="condition-row drunk"> 
+          <div class="checkbox">
+            <input type="checkbox" name="drunk"/>
+          </div>
+          <div class="non-checkbox">
+            Drunk.
+            Swap your 
+            <input type="text" name="drunk_stat_1"/>&nbsp;and
+            <input type="text" name="drunk_stat_2"/>&nbsp;until sober.
+          </div>
+        </div>
+        <div class="notes">
+          <textarea></textarea>
+        </div>
+        <div class="notes">
+          <textarea></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="hp-block"> </div>
+    <div class="equipment-block"></div>
+  </div>
+</div>

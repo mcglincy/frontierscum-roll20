@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Smokum&family=Satisfy&family=Inconsolata&display=swap');
+
+$cursive-font: 'Satisfy', cursive;
+$logo-font: 'Smokum', cursive;
+$mono-font: 'Inconsolata', monospace;
+$border: 2px solid black;
+
+// .charsheet .frontierscum {
+.frontierscum {
+  border: 1px solid black;
+  padding: 20px;
+
+  .top-label {
+    background-color: black;
+    color: white;
+    font-family: $logo-font;
+    font-size: 1.3em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .char-sheet-header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .char-sheet-logo {
+      background-image: url('img/char-sheet-logo.png');
+      background-size: 800px 214px;
+      height: 214px;
+      width: 800px;
+    }
+    .dead-or-alive {
+      font-family: $cursive-font;
+      font-size: 1.5em;
+    }
+  }
+  .char-sheet-body {
+    display: flex;
+    flex-direction: column;
+    .rewards-block {
+    }
+    .abilities-block {
+      display: flex;
+      .ability-col {
+        display: flex;
+        flex: 0 0 120;
+        flex-direction: column;
+        .ability {
+          align-items: center;
+          border-bottom: none;
+          border-left: $border;
+          border-right: none;
+          border-top: none;
+          display: flex;
+          flex: 0 0 72px;
+          flex-direction: column;
+          .name {
+            background-color: black;
+            color: white;
+            flex: 0 0 30px;
+            width: 100%;
+          }
+          .value {
+            align-items: center;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4px;
+            width: 100%;
+            input {
+              text-align: center;
+              width: 50px;
+            }
+          }
+        }
+        .ability:last-child {
+          border-bottom: $border;
+        } 
+      }
+      .portrait-col {
+        border: 2px solid black;
+        flex: 0 0 280;
+        padding: 4px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      .portrait-inner {
+          border: 2px solid black;
+          img {
+            height: 274px;
+            width: 274px;
+          }  
+        }
+      }
+      .condition-col {
+        display: flex;
+        margin-left: 2px;
+        flex: 0 0 350px;
+        flex-direction: column;
+        .conditions-and-notes {
+          flex: 0 0 30px;
+        }
+        .condition-row {
+          border-bottom: $border;
+          border-left: $border;
+          border-right: $border;
+          display: flex;
+          flex: 0 0 50px;
+          font-family: $mono-font;
+          font-size: 0.7em;
+          padding: 4px;
+          .checkbox {
+            flex: 0 0 50px;
+          }
+          .non-checkbox {
+            flex: 1;
+            input {
+              width: 50px;
+            }
+          }
+        }        
+        .miserable {
+        }
+        .drunk {
+        }
+        .notes {
+          border-bottom: $border;
+          border-left: $border;
+          border-right: $border;
+          flex: 0 0 65px;
+          textarea {
+            border: none;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .hp-block {
+
+    }
+    .equipment-block {
+
+    }
+  }
+}

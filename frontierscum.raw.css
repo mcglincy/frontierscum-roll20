@@ -1,1 +1,126 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Smokum&family=Satisfy&family=Inconsolata&display=swap");
+.frontierscum {
+  border: 1px solid black;
+  padding: 20px;
+}
+.frontierscum .top-label {
+  background-color: black;
+  color: white;
+  font-family: "Smokum", cursive;
+  font-size: 1.3em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.frontierscum .char-sheet-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.frontierscum .char-sheet-header .char-sheet-logo {
+  background-image: url("img/char-sheet-logo.png");
+  background-size: 800px 214px;
+  height: 214px;
+  width: 800px;
+}
+.frontierscum .char-sheet-header .dead-or-alive {
+  font-family: "Satisfy", cursive;
+  font-size: 1.5em;
+}
+.frontierscum .char-sheet-body {
+  display: flex;
+  flex-direction: column;
+}
+.frontierscum .char-sheet-body .abilities-block {
+  display: flex;
+}
+.frontierscum .char-sheet-body .abilities-block .ability-col {
+  display: flex;
+  flex: 0 0 120;
+  flex-direction: column;
+}
+.frontierscum .char-sheet-body .abilities-block .ability-col .ability {
+  align-items: center;
+  border-bottom: none;
+  border-left: 2px solid black;
+  border-right: none;
+  border-top: none;
+  display: flex;
+  flex: 0 0 72px;
+  flex-direction: column;
+}
+.frontierscum .char-sheet-body .abilities-block .ability-col .ability .name {
+  background-color: black;
+  color: white;
+  flex: 0 0 30px;
+  width: 100%;
+}
+.frontierscum .char-sheet-body .abilities-block .ability-col .ability .value {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4px;
+  width: 100%;
+}
+.frontierscum .char-sheet-body .abilities-block .ability-col .ability .value input {
+  text-align: center;
+  width: 50px;
+}
+.frontierscum .char-sheet-body .abilities-block .ability-col .ability:last-child {
+  border-bottom: 2px solid black;
+}
+.frontierscum .char-sheet-body .abilities-block .portrait-col {
+  border: 2px solid black;
+  flex: 0 0 280;
+  padding: 4px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.frontierscum .char-sheet-body .abilities-block .portrait-col .portrait-inner {
+  border: 2px solid black;
+}
+.frontierscum .char-sheet-body .abilities-block .portrait-col .portrait-inner img {
+  height: 274px;
+  width: 274px;
+}
+.frontierscum .char-sheet-body .abilities-block .condition-col {
+  display: flex;
+  margin-left: 2px;
+  flex: 0 0 350px;
+  flex-direction: column;
+}
+.frontierscum .char-sheet-body .abilities-block .condition-col .conditions-and-notes {
+  flex: 0 0 30px;
+}
+.frontierscum .char-sheet-body .abilities-block .condition-col .condition-row {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  display: flex;
+  flex: 0 0 50px;
+  font-family: "Inconsolata", monospace;
+  font-size: 0.7em;
+  padding: 4px;
+}
+.frontierscum .char-sheet-body .abilities-block .condition-col .condition-row .checkbox {
+  flex: 0 0 50px;
+}
+.frontierscum .char-sheet-body .abilities-block .condition-col .condition-row .non-checkbox {
+  flex: 1;
+}
+.frontierscum .char-sheet-body .abilities-block .condition-col .condition-row .non-checkbox input {
+  width: 50px;
+}
+.frontierscum .char-sheet-body .abilities-block .condition-col .notes {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  flex: 0 0 65px;
+}
+.frontierscum .char-sheet-body .abilities-block .condition-col .notes textarea {
+  border: none;
+  height: 100%;
+  width: 100%;
+}
