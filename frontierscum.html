@@ -2,7 +2,10 @@
 <link rel="stylesheet" href="frontierscum.css"/>
 <div class="frontierscum">
   <div class="char-sheet-header">
-    <div class="char-sheet-logo"> </div>
+    <div class="fs-logo">
+       FRONTIER SCUM</div>
+    <div class="wanted">
+       WANTED</div>
     <div class="dead-or-alive">
       <label class="radio-visible">
         <input type="radio" name="dead_or_alive" value="dead_or_alive"/>&nbsp;Dead or Alive&nbsp;
@@ -16,7 +19,25 @@
     </div>
   </div>
   <div class="char-sheet-body">
-    <div class="rewards-block">rewards block</div>
+    <div class="name-block">
+      <div class="fields"> 
+        <div class="field-row">
+          <input type="text" name="name" placeholder="Name"/>
+        </div>
+        <div class="field-row">
+          <label>A</label>
+          <input type="text" name="class" placeholder="Class"/>
+        </div>
+        <div class="field-row">
+          <label>WANTED FOR</label>
+          <input type="text" name="wanted_for" placeholder="Wanted for"/>
+        </div>
+      </div>
+      <div class="rewards">
+        <label>REWARDS </label>
+        <textarea></textarea>
+      </div>
+    </div>
     <div class="abilities-block">
       <div class="ability-col">
         <div class="ability grit">
@@ -69,14 +90,15 @@
           </div>
         </div>
         <div class="notes">
-          <textarea></textarea>
+          <textarea placeholder="Notes and such"></textarea>
         </div>
         <div class="notes">
-          <textarea></textarea>
+          <textarea placeholder="More of 'em"></textarea>
         </div>
       </div>
     </div>
-    <div class="hp-block"> </div>
-    <div class="equipment-block"></div>
+    <div class="hp-block">
+       hp block goes here</div>
+    <div class="equipment-block">equipment block goes here</div>
   </div>
 </div>

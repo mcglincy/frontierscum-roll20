@@ -2,7 +2,10 @@ link(rel='stylesheet', href='frontierscum.css')
 
 .frontierscum
   .char-sheet-header
-    .char-sheet-logo 
+    .fs-logo 
+      | FRONTIER SCUM
+    .wanted 
+      | WANTED
     .dead-or-alive
       label.radio-visible
         input(type='radio', name='dead_or_alive', value='dead_or_alive')
@@ -16,8 +19,19 @@ link(rel='stylesheet', href='frontierscum.css')
         input(type='radio', name='dead_or_alive', value='alive')
         | &nbsp;Alive&nbsp;
   .char-sheet-body
-    .rewards-block
-      | rewards block
+    .name-block
+      .fields 
+        .field-row
+          input(type='text', name='name', placeholder='Name')
+        .field-row
+          label A
+          input(type='text', name='class', placeholder='Class')
+        .field-row
+          label WANTED FOR
+          input(type='text', name='wanted_for', placeholder='Wanted for')
+      .rewards
+        label REWARDS 
+        textarea
     .abilities-block
       .ability-col
         .ability.grit
@@ -59,9 +73,10 @@ link(rel='stylesheet', href='frontierscum.css')
             input(type='text', name='drunk_stat_2')
             | &nbsp;until sober.
         .notes
-          textarea
+          textarea(placeholder="Notes and such")
         .notes
-          textarea
+          textarea(placeholder="More of 'em")
     .hp-block 
-
+      | hp block goes here
     .equipment-block
+      | equipment block goes here

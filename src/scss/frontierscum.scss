@@ -1,19 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Smokum&family=Satisfy&family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smokum&family=Satisfy&family=Inconsolata&family=Ultra&family=Alegreya&display=swap');
 
 $cursive-font: 'Satisfy', cursive;
 $logo-font: 'Smokum', cursive;
+$slab-font: 'Ultra', serif;
+$label-font: 'Smokum', cursive;
 $mono-font: 'Inconsolata', monospace;
+$serif-font: 'Alegreya', serif;
 $border: 2px solid black;
+$dotted: 1px dotted black;
+
+$light-gray: #eeeeee;
 
 // .charsheet .frontierscum {
 .frontierscum {
   border: 1px solid black;
   padding: 20px;
 
+  textarea {
+    background-color: $light-gray;
+    border: none;
+    resize: none;
+  }
+
   .top-label {
     background-color: black;
     color: white;
-    font-family: $logo-font;
+    font-family: $label-font;
     font-size: 1.3em;
     text-align: center;
     text-transform: uppercase;
@@ -23,21 +35,65 @@ $border: 2px solid black;
     align-items: center;
     display: flex;
     flex-direction: column;
-    .char-sheet-logo {
-      background-image: url('img/char-sheet-logo.png');
-      background-size: 800px 214px;
-      height: 214px;
-      width: 800px;
+    .fs-logo {
+      border-bottom: $border;
+      border-top: $border;
+      font-family: $logo-font;
+      font-size: 2.0em;
+      line-height: 0.9em;
+    }
+    .wanted {
+      font-family: $slab-font;
+      font-size: 6.5em;
+      line-height: 0.8em;
     }
     .dead-or-alive {
       font-family: $cursive-font;
       font-size: 1.5em;
     }
   }
+
   .char-sheet-body {
     display: flex;
     flex-direction: column;
-    .rewards-block {
+    .name-block {
+      display: flex;
+      margin-bottom: 10px;
+      width: 100%;
+      .fields {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 590px;
+        width: 100%;
+        label {
+          font-family: $label-font;
+          font-size: 1.2em;
+          margin-right: 4px;
+        }
+        .field-row {
+          display: flex;
+          width: 100%;
+          input {
+            border: 0;
+            outline: 0;
+            background: transparent;
+            border-bottom: $dotted;            
+            flex: 1;
+          }
+        }
+      }
+      .rewards {
+        flex: 0 0 50px;
+        margin-left: 10px;
+        text-align: center;
+        label {
+          font-family: $label-font;
+          font-size: 1.5em;
+        }
+        textarea {
+          width: 100px;
+        }
+      }
     }
     .abilities-block {
       display: flex;
@@ -98,37 +154,39 @@ $border: 2px solid black;
         margin-left: 2px;
         flex: 0 0 350px;
         flex-direction: column;
+        justify-content: space-between;
+        border: $border;
         .conditions-and-notes {
           flex: 0 0 30px;
         }
         .condition-row {
-          border-bottom: $border;
-          border-left: $border;
-          border-right: $border;
           display: flex;
-          flex: 0 0 50px;
+          flex: 0 0 45px;
           font-family: $mono-font;
           font-size: 0.7em;
           padding: 4px;
           .checkbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;;
             flex: 0 0 50px;
           }
           .non-checkbox {
             flex: 1;
             input {
-              width: 50px;
+              width: 60px;
             }
           }
         }        
         .miserable {
         }
         .drunk {
+          border-top: $border;
         }
         .notes {
-          border-bottom: $border;
-          border-left: $border;
-          border-right: $border;
-          flex: 0 0 65px;
+          border-top: $border;
+          flex: 0 0 62px;
+          padding: 4px;
           textarea {
             border: none;
             height: 100%;
