@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Smokum&family=Satisfy&family=Inconsolata&family=Ultra&family=Alegreya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smokum&family=Satisfy&family=Inconsolata&family=Ultra&family=Alegreya&family=Rye&display=swap");
 .frontierscum input[type=number],
 .frontierscum input[type=text] {
   border: 0;
@@ -23,13 +23,19 @@
   text-transform: uppercase;
 }
 
-.frontierscum .char-sheet-header {
+.frontierscum .charsheet {
+  border: 1px solid black;
+  padding: 20px;
+  width: 738px;
+}
+
+.frontierscum .charsheet-header {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-.frontierscum .char-sheet-header .fs-logo {
+.frontierscum .charsheet-header .fs-logo {
   border-bottom: 4px solid black;
   border-top: 4px solid black;
   font-family: "Smokum", cursive;
@@ -37,66 +43,66 @@
   line-height: 0.9em;
   padding-top: 2px;
 }
-.frontierscum .char-sheet-header .wanted {
+.frontierscum .charsheet-header .wanted {
   font-family: "Ultra", serif;
   font-size: 6em;
   line-height: 0.8em;
 }
-.frontierscum .char-sheet-header .dead-or-alive {
+.frontierscum .charsheet-header .dead-or-alive {
   font-family: "Satisfy", cursive;
   font-size: 1.5em;
 }
 
-.frontierscum .char-sheet-body {
+.frontierscum .charsheet-body {
   display: flex;
   flex-direction: column;
 }
-.frontierscum .char-sheet-body .name-block {
+.frontierscum .charsheet-body .name-block {
   display: flex;
   margin-bottom: 10px;
   width: 100%;
 }
-.frontierscum .char-sheet-body .name-block .fields {
+.frontierscum .charsheet-body .name-block .fields {
   display: flex;
   flex-direction: column;
   flex: 0 0 614px;
   width: 100%;
 }
-.frontierscum .char-sheet-body .name-block .fields label {
+.frontierscum .charsheet-body .name-block .fields label {
   font-family: "Smokum", cursive;
   font-size: 1.2em;
   margin-right: 4px;
 }
-.frontierscum .char-sheet-body .name-block .fields input {
+.frontierscum .charsheet-body .name-block .fields input {
   flex: 1;
 }
-.frontierscum .char-sheet-body .name-block .fields .field-row {
+.frontierscum .charsheet-body .name-block .fields .field-row {
   display: flex;
   width: 100%;
 }
-.frontierscum .char-sheet-body .name-block .rewards {
+.frontierscum .charsheet-body .name-block .rewards {
   flex: 0 0 100px;
   margin-left: 10px;
   text-align: center;
 }
-.frontierscum .char-sheet-body .name-block .rewards label {
+.frontierscum .charsheet-body .name-block .rewards label {
   font-family: "Ultra", serif;
   font-size: 0.9em;
 }
-.frontierscum .char-sheet-body .name-block .rewards textarea {
+.frontierscum .charsheet-body .name-block .rewards textarea {
   height: 55px;
   width: 105px;
 }
-.frontierscum .char-sheet-body .abilities-block {
+.frontierscum .charsheet-body .abilities-block {
   display: flex;
   margin-bottom: 10px;
 }
-.frontierscum .char-sheet-body .abilities-block .ability-col {
+.frontierscum .charsheet-body .abilities-block .ability-col {
   display: flex;
   flex: 0 0 90px;
   flex-direction: column;
 }
-.frontierscum .char-sheet-body .abilities-block .ability-col .ability {
+.frontierscum .charsheet-body .abilities-block .ability-col .ability {
   align-items: center;
   border-bottom: none;
   border-left: 2px solid black;
@@ -106,13 +112,13 @@
   flex: 0 0 72px;
   flex-direction: column;
 }
-.frontierscum .char-sheet-body .abilities-block .ability-col .ability .name {
+.frontierscum .charsheet-body .abilities-block .ability-col .ability .name {
   background-color: black;
   color: white;
   flex: 0 0 30px;
   width: 100%;
 }
-.frontierscum .char-sheet-body .abilities-block .ability-col .ability .value {
+.frontierscum .charsheet-body .abilities-block .ability-col .ability .value {
   align-items: center;
   display: flex;
   flex: 1;
@@ -121,14 +127,14 @@
   padding: 4px;
   width: 100%;
 }
-.frontierscum .char-sheet-body .abilities-block .ability-col .ability .value input {
+.frontierscum .charsheet-body .abilities-block .ability-col .ability .value input {
   text-align: center;
   width: 30px;
 }
-.frontierscum .char-sheet-body .abilities-block .ability-col .ability:last-child {
+.frontierscum .charsheet-body .abilities-block .ability-col .ability:last-child {
   border-bottom: 2px solid black;
 }
-.frontierscum .char-sheet-body .abilities-block .portrait-col {
+.frontierscum .charsheet-body .abilities-block .portrait-col {
   border: 2px solid black;
   flex: 0 0 280;
   padding: 4px;
@@ -136,14 +142,14 @@
   display: flex;
   justify-content: center;
 }
-.frontierscum .char-sheet-body .abilities-block .portrait-col .portrait-inner {
+.frontierscum .charsheet-body .abilities-block .portrait-col .portrait-inner {
   border: 2px solid black;
 }
-.frontierscum .char-sheet-body .abilities-block .portrait-col .portrait-inner img {
+.frontierscum .charsheet-body .abilities-block .portrait-col .portrait-inner img {
   height: 274px;
   width: 274px;
 }
-.frontierscum .char-sheet-body .abilities-block .condition-col {
+.frontierscum .charsheet-body .abilities-block .condition-col {
   display: flex;
   margin-left: 2px;
   flex: 0 0 350px;
@@ -151,84 +157,84 @@
   justify-content: space-between;
   border: 2px solid black;
 }
-.frontierscum .char-sheet-body .abilities-block .condition-col .conditions-and-notes {
+.frontierscum .charsheet-body .abilities-block .condition-col .conditions-and-notes {
   flex: 0 0 30px;
 }
-.frontierscum .char-sheet-body .abilities-block .condition-col .condition-row {
+.frontierscum .charsheet-body .abilities-block .condition-col .condition-row {
   display: flex;
   flex: 0 0 45px;
   font-family: "Inconsolata", monospace;
   font-size: 0.7em;
   padding: 4px;
 }
-.frontierscum .char-sheet-body .abilities-block .condition-col .condition-row .checkbox {
+.frontierscum .charsheet-body .abilities-block .condition-col .condition-row .checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 0 0 50px;
 }
-.frontierscum .char-sheet-body .abilities-block .condition-col .condition-row .non-checkbox {
+.frontierscum .charsheet-body .abilities-block .condition-col .condition-row .non-checkbox {
   flex: 1;
 }
-.frontierscum .char-sheet-body .abilities-block .condition-col .condition-row .non-checkbox input {
+.frontierscum .charsheet-body .abilities-block .condition-col .condition-row .non-checkbox input {
   width: 60px;
 }
-.frontierscum .char-sheet-body .abilities-block .condition-col .drunk {
+.frontierscum .charsheet-body .abilities-block .condition-col .drunk {
   border-top: 2px solid black;
 }
-.frontierscum .char-sheet-body .abilities-block .condition-col .notes {
+.frontierscum .charsheet-body .abilities-block .condition-col .notes {
   border-top: 2px solid black;
   flex: 0 0 62px;
   padding: 4px;
 }
-.frontierscum .char-sheet-body .abilities-block .condition-col .notes textarea {
+.frontierscum .charsheet-body .abilities-block .condition-col .notes textarea {
   border: none;
   height: 100%;
   width: 100%;
 }
-.frontierscum .char-sheet-body .hp-block {
+.frontierscum .charsheet-body .hp-block {
   display: flex;
   justify-content: space-around;
   margin-bottom: 10px;
 }
-.frontierscum .char-sheet-body .hp-block .stat-block {
+.frontierscum .charsheet-body .hp-block .stat-block {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-.frontierscum .char-sheet-body .hp-block .stat-block input {
+.frontierscum .charsheet-body .hp-block .stat-block input {
   width: 100px;
 }
-.frontierscum .char-sheet-body .hp-block .stat-block .name {
+.frontierscum .charsheet-body .hp-block .stat-block .name {
   font-family: "Ultra", serif;
   font-size: 1.2em;
 }
-.frontierscum .char-sheet-body .equipment-block {
+.frontierscum .charsheet-body .equipment-block {
   display: flex;
 }
-.frontierscum .char-sheet-body .equipment-block .eq-col-1 {
+.frontierscum .charsheet-body .equipment-block .eq-col-1 {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
-.frontierscum .char-sheet-body .equipment-block .eq-col-2 {
+.frontierscum .charsheet-body .equipment-block .eq-col-2 {
   display: flex;
   flex-direction: column;
   flex: 1;
   margin-left: 2px;
   margin-right: 2px;
 }
-.frontierscum .char-sheet-body .equipment-block .eq-col-3 {
+.frontierscum .charsheet-body .equipment-block .eq-col-3 {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
-.frontierscum .char-sheet-body .equipment-block .eq-section {
+.frontierscum .charsheet-body .equipment-block .eq-section {
   border-bottom: 2px solid black;
   display: flex;
   flex-direction: column;
 }
-.frontierscum .char-sheet-body .equipment-block .eq-row {
+.frontierscum .charsheet-body .equipment-block .eq-row {
   display: flex;
   flex: column;
   flex: 0 0 30px;
@@ -236,37 +242,32 @@
   border-right: 2px solid black;
   padding: 2px;
 }
-.frontierscum .char-sheet-body .equipment-block .eq-row input {
+.frontierscum .charsheet-body .equipment-block .eq-row input {
   width: 100%;
 }
-.frontierscum .char-sheet-body .equipment-block .eq-section.skills {
+.frontierscum .charsheet-body .equipment-block .eq-section.skills {
   justify-content: space-between;
 }
-.frontierscum .char-sheet-body .equipment-block .eq-section.skills .skills-label {
+.frontierscum .charsheet-body .equipment-block .eq-section.skills .skills-label {
   border-bottom: 2px solid black;
   flex: 0 0 30px;
   font-family: "Ultra", serif;
   text-align: center;
   line-height: 1.5em;
 }
-.frontierscum .char-sheet-body .equipment-block .eq-section.on-your-back {
+.frontierscum .charsheet-body .equipment-block .eq-section.on-your-back {
   margin-top: 4px;
 }
-.frontierscum .char-sheet-body .equipment-block .eq-section.on-your-back .eq-row {
+.frontierscum .charsheet-body .equipment-block .eq-section.on-your-back .eq-row {
   flex: 0 0 40px;
 }
-.frontierscum .char-sheet-body .equipment-block .eq-section.in-your-pockets {
+.frontierscum .charsheet-body .equipment-block .eq-section.in-your-pockets {
   border-left: 2px solid black;
   border-right: 2px solid black;
   height: 304px;
 }
-.frontierscum .char-sheet-body .equipment-block .eq-section.in-your-pockets .eq-row {
+.frontierscum .charsheet-body .equipment-block .eq-section.in-your-pockets .eq-row {
   border-left: none;
   border-right: none;
   flex: 0 0 23px;
-}
-
-.frontierscum {
-  border: 1px solid black;
-  padding: 20px;
 }

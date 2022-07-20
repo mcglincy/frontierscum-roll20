@@ -1,211 +1,213 @@
 
 <link rel="stylesheet" href="frontierscum.css"/>
 <div class="frontierscum">
-  <div class="char-sheet-header">
-    <div class="fs-logo">FRONTIER SCUM</div>
-    <div class="wanted">WANTED</div>
-    <div class="dead-or-alive">
-      <label class="radio-visible">
-        <input type="radio" name="dead_or_alive" value="dead_or_alive" checked="true"/>&nbsp;Dead or Alive&nbsp;
-      </label>/
-      <label class="radio-visible">
-        <input type="radio" name="dead_or_alive" value="dead"/>&nbsp;Dead&nbsp;
-      </label>/
-      <label class="radio-visible">
-        <input type="radio" name="dead_or_alive" value="alive"/>&nbsp;Alive&nbsp;
-      </label>
-    </div>
-  </div>
-  <div class="char-sheet-body">
-    <div class="name-block">
-      <div class="fields"> 
-        <div class="field-row">
-          <input type="text" name="name" placeholder="Kid Pomade" spellcheck="false"/>
-        </div>
-        <div class="field-row">
-          <label>A</label>
-          <input type="text" name="class" placeholder="Drifter" spellcheck="false"/>
-        </div>
-        <div class="field-row">
-          <label>WANTED FOR</label>
-          <input type="text" name="wanted_for" placeholder="Repeated fraud" spellcheck="false"/>
-        </div>
-      </div>
-      <div class="rewards">
-        <label>REWARDS </label>
-        <textarea></textarea>
+  <div class="charsheet">
+    <div class="charsheet-header">
+      <div class="fs-logo">FRONTIER SCUM</div>
+      <div class="wanted">WANTED</div>
+      <div class="dead-or-alive">
+        <label class="radio-visible">
+          <input type="radio" name="dead_or_alive" value="dead_or_alive" checked="true"/>&nbsp;Dead or Alive&nbsp;
+        </label>/
+        <label class="radio-visible">
+          <input type="radio" name="dead_or_alive" value="dead"/>&nbsp;Dead&nbsp;
+        </label>/
+        <label class="radio-visible">
+          <input type="radio" name="dead_or_alive" value="alive"/>&nbsp;Alive&nbsp;
+        </label>
       </div>
     </div>
-    <div class="abilities-block">
-      <div class="ability-col">
-        <div class="ability grit">
-          <div class="top-label name">Grit</div>
-          <div class="value">
-            <input type="text" inputmode="numeric" name="grit" placeholder="0"/>
+    <div class="charsheet-body">
+      <div class="name-block">
+        <div class="fields"> 
+          <div class="field-row">
+            <input type="text" name="name" placeholder="Kid Pomade" spellcheck="false"/>
+          </div>
+          <div class="field-row">
+            <label>A</label>
+            <input type="text" name="class" placeholder="Drifter" spellcheck="false"/>
+          </div>
+          <div class="field-row">
+            <label>WANTED FOR</label>
+            <input type="text" name="wanted_for" placeholder="Repeated fraud" spellcheck="false"/>
           </div>
         </div>
-        <div class="ability slick">
-          <div class="top-label name">Slick</div>
-          <div class="value">
-            <input type="text" inputmode="numeric" name="slick" placeholder="0"/>
+        <div class="rewards">
+          <label>REWARDS </label>
+          <textarea></textarea>
+        </div>
+      </div>
+      <div class="abilities-block">
+        <div class="ability-col">
+          <div class="ability grit">
+            <div class="top-label name">Grit</div>
+            <div class="value">
+              <input type="text" inputmode="numeric" name="grit" placeholder="0"/>
+            </div>
+          </div>
+          <div class="ability slick">
+            <div class="top-label name">Slick</div>
+            <div class="value">
+              <input type="text" inputmode="numeric" name="slick" placeholder="0"/>
+            </div>
+          </div>
+          <div class="ability wits">
+            <div class="top-label name">Wits</div>
+            <div class="value">
+              <input type="text" inputmode="numeric" name="wits" placeholder="0"/>
+            </div>
+          </div>
+          <div class="ability luck">
+            <div class="top-label name">Luck</div>
+            <div class="value">
+              <input type="text" inputmode="numeric" name="luck" placeholder="0"/>
+            </div>
           </div>
         </div>
-        <div class="ability wits">
-          <div class="top-label name">Wits</div>
-          <div class="value">
-            <input type="text" inputmode="numeric" name="wits" placeholder="0"/>
-          </div>
+        <div class="portrait-col">
+          <div class="portrait-inner"><img src="img/portrait-placeholder.jpg"/></div>
         </div>
-        <div class="ability luck">
-          <div class="top-label name">Luck</div>
-          <div class="value">
-            <input type="text" inputmode="numeric" name="luck" placeholder="0"/>
+        <div class="condition-col">
+          <div class="top-label conditions-and-notes">Conditions & Notes</div>
+          <div class="condition-row miserable"> 
+            <div class="checkbox">
+              <input type="checkbox" name="miserable"/>
+            </div>
+            <div class="non-checkbox">Miserable (
+              <input type="text" name="misery" spellcheck="false"/>&nbsp;). You don't recover HP from rest.
+            </div>
+          </div>
+          <div class="condition-row drunk"> 
+            <div class="checkbox">
+              <input type="checkbox" name="drunk"/>
+            </div>
+            <div class="non-checkbox">
+              Drunk.
+              Swap your 
+              <input type="text" name="drunk_stat_1" spellcheck="false"/>&nbsp;and
+              <input type="text" name="drunk_stat_2" spellcheck="false"/>&nbsp;until sober.
+            </div>
+          </div>
+          <div class="notes">
+            <textarea placeholder="Notes and such" spellcheck="false"></textarea>
+          </div>
+          <div class="notes">
+            <textarea placeholder="More of 'em" spellcheck="false"></textarea>
           </div>
         </div>
       </div>
-      <div class="portrait-col">
-        <div class="portrait-inner"><img src="img/portrait-placeholder.jpg"/></div>
-      </div>
-      <div class="condition-col">
-        <div class="top-label conditions-and-notes">Conditions & Notes</div>
-        <div class="condition-row miserable"> 
-          <div class="checkbox">
-            <input type="checkbox" name="miserable"/>
-          </div>
-          <div class="non-checkbox">Miserable (
-            <input type="text" name="misery" spellcheck="false"/>&nbsp;). You don't recover HP from rest.
+      <div class="hp-block"> 
+        <div class="stat-block hp"> 
+          <div class="name">
+             HP</div>
+          <div class="value"> 
+            <input type="text" inputmode="numeric" name="hp" placeholder="0"/>
           </div>
         </div>
-        <div class="condition-row drunk"> 
-          <div class="checkbox">
-            <input type="checkbox" name="drunk"/>
-          </div>
-          <div class="non-checkbox">
-            Drunk.
-            Swap your 
-            <input type="text" name="drunk_stat_1" spellcheck="false"/>&nbsp;and
-            <input type="text" name="drunk_stat_2" spellcheck="false"/>&nbsp;until sober.
+        <div class="stat-block max-hp"> 
+          <div class="name">
+             MAX HP</div>
+          <div class="value"> 
+            <input type="text" inputmode="numeric" name="max_hp" placeholder="0"/>
           </div>
         </div>
-        <div class="notes">
-          <textarea placeholder="Notes and such" spellcheck="false"></textarea>
-        </div>
-        <div class="notes">
-          <textarea placeholder="More of 'em" spellcheck="false"></textarea>
-        </div>
-      </div>
-    </div>
-    <div class="hp-block"> 
-      <div class="stat-block hp"> 
-        <div class="name">
-           HP</div>
-        <div class="value"> 
-          <input type="text" inputmode="numeric" name="hp" placeholder="0"/>
-        </div>
-      </div>
-      <div class="stat-block max-hp"> 
-        <div class="name">
-           MAX HP</div>
-        <div class="value"> 
-          <input type="text" inputmode="numeric" name="max_hp" placeholder="0"/>
-        </div>
-      </div>
-      <div class="stat-block aces"> 
-        <div class="name">
-           ACES</div>
-        <div class="value"> 
-          <input type="text" inputmode="numeric" name="aces" placeholder="0"/>
-        </div>
-      </div>
-    </div>
-    <div class="equipment-block">
-      <div class="eq-col-1">
-        <div class="eq-section on-your-head">
-          <div class="top-label">ON YOUR HEAD</div>
-          <div class="eq-row">
-            <input type="text" name="on_your_head"/>
-          </div>
-        </div>
-        <div class="eq-section skills">
-          <div class="skills-label">SKILLS</div>
-          <div class="eq-row">
-            <input type="text" name="skills_1"/>
-          </div>
-          <div class="eq-row">
-            <input type="text" name="skills_2"/>
-          </div>
-          <div class="eq-row">
-            <input type="text" name="skills_3"/>
-          </div>
-          <div class="eq-row">
-            <input type="text" name="skills_4"/>
-          </div>
-          <div class="eq-row">
-            <input type="text" name="skills_5"/>
-          </div>
-          <div class="eq-row">
-            <input type="text" name="skills_6"/>
+        <div class="stat-block aces"> 
+          <div class="name">
+             ACES</div>
+          <div class="value"> 
+            <input type="text" inputmode="numeric" name="aces" placeholder="0"/>
           </div>
         </div>
       </div>
-      <div class="eq-col-2">
-        <div class="eq-section on-your-belt">
-          <div class="top-label">ON YOUR BELT</div>
-          <div class="eq-row">
-            <input type="text" name="belt_1"/>
+      <div class="equipment-block">
+        <div class="eq-col-1">
+          <div class="eq-section on-your-head">
+            <div class="top-label">ON YOUR HEAD</div>
+            <div class="eq-row">
+              <input type="text" name="on_your_head"/>
+            </div>
           </div>
-          <div class="eq-row">
-            <input type="text" name="belt_2"/>
-          </div>
-          <div class="eq-row">
-            <input type="text" name="belt_3"/>
+          <div class="eq-section skills">
+            <div class="skills-label">SKILLS</div>
+            <div class="eq-row">
+              <input type="text" name="skills_1"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="skills_2"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="skills_3"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="skills_4"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="skills_5"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="skills_6"/>
+            </div>
           </div>
         </div>
-        <div class="eq-section on-your-back">
-          <div class="top-label">ON YOUR BACK</div>
-          <div class="eq-row">
-            <input type="text" name="back_1"/>
+        <div class="eq-col-2">
+          <div class="eq-section on-your-belt">
+            <div class="top-label">ON YOUR BELT</div>
+            <div class="eq-row">
+              <input type="text" name="belt_1"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="belt_2"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="belt_3"/>
+            </div>
           </div>
-          <div class="eq-row">
-            <input type="text" name="back_2"/>
-          </div>
-          <div class="eq-row">
-            <input type="text" name="back_3"/>
+          <div class="eq-section on-your-back">
+            <div class="top-label">ON YOUR BACK</div>
+            <div class="eq-row">
+              <input type="text" name="back_1"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="back_2"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="back_3"/>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="eq-col-3"> 
-        <div class="eq-section in-your-pockets">
-          <div class="top-label">IN YOUR POCKETS</div>
-          <div class="eq-row">
-            <input type="text" name="pockets_1"/>
-          </div>
-          <div class="eq-row">
-            <input type="text" name="pockets_2"/>
-          </div>
-          <div class="eq-row">
-            <input type="text" name="pockets_3"/>
-          </div>
-          <div class="eq-row">
-            <input type="text" name="pockets_4"/>
-          </div>
-          <div class="eq-row">
-            <input type="text" name="pockets_5"/>
-          </div>
-          <div class="eq-row">
-            <input type="text" name="pockets_6"/>
-          </div>
-          <div class="eq-row">
-            <input type="text" name="pockets_7"/>
-          </div>
-          <div class="eq-row">
-            <input type="text" name="pockets_8"/>
-          </div>
-          <div class="eq-row">
-            <input type="text" name="pockets_9"/>
-          </div>
-          <div class="eq-row">
-            <input type="text" name="pockets_10"/>
+        <div class="eq-col-3"> 
+          <div class="eq-section in-your-pockets">
+            <div class="top-label">IN YOUR POCKETS</div>
+            <div class="eq-row">
+              <input type="text" name="pockets_1"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="pockets_2"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="pockets_3"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="pockets_4"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="pockets_5"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="pockets_6"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="pockets_7"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="pockets_8"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="pockets_9"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="pockets_10"/>
+            </div>
           </div>
         </div>
       </div>
