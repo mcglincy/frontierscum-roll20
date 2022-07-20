@@ -21,8 +21,8 @@
 .frontierscum .top-label {
   background-color: black;
   color: white;
-  font-family: "Ultra", serif;
-  font-size: 0.8em;
+  font-family: "Smokum", cursive;
+  font-size: 1.3em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -61,12 +61,12 @@
 .frontierscum .char-sheet-body .name-block .fields {
   display: flex;
   flex-direction: column;
-  flex: 0 0 590px;
+  flex: 0 0 614px;
   width: 100%;
 }
 .frontierscum .char-sheet-body .name-block .fields label {
-  font-family: "Ultra", serif;
-  font-size: 0.7em;
+  font-family: "Smokum", cursive;
+  font-size: 1.2em;
   margin-right: 4px;
 }
 .frontierscum .char-sheet-body .name-block .fields input {
@@ -77,7 +77,7 @@
   width: 100%;
 }
 .frontierscum .char-sheet-body .name-block .rewards {
-  flex: 0 0 50px;
+  flex: 0 0 100px;
   margin-left: 10px;
   text-align: center;
 }
@@ -86,7 +86,8 @@
   font-size: 0.9em;
 }
 .frontierscum .char-sheet-body .name-block .rewards textarea {
-  width: 100px;
+  height: 55px;
+  width: 105px;
 }
 .frontierscum .char-sheet-body .abilities-block {
   display: flex;
@@ -94,7 +95,7 @@
 }
 .frontierscum .char-sheet-body .abilities-block .ability-col {
   display: flex;
-  flex: 0 0 120;
+  flex: 0 0 90px;
   flex-direction: column;
 }
 .frontierscum .char-sheet-body .abilities-block .ability-col .ability {
@@ -124,7 +125,7 @@
 }
 .frontierscum .char-sheet-body .abilities-block .ability-col .ability .value input {
   text-align: center;
-  width: 50px;
+  width: 30px;
 }
 .frontierscum .char-sheet-body .abilities-block .ability-col .ability:last-child {
   border-bottom: 2px solid black;
@@ -203,4 +204,66 @@
 .frontierscum .char-sheet-body .hp-block .stat-block .name {
   font-family: "Ultra", serif;
   font-size: 1.2em;
+}
+.frontierscum .char-sheet-body .equipment-block {
+  display: flex;
+}
+.frontierscum .char-sheet-body .equipment-block .eq-col-1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.frontierscum .char-sheet-body .equipment-block .eq-col-2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.frontierscum .char-sheet-body .equipment-block .eq-col-3 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.frontierscum .char-sheet-body .equipment-block .eq-section {
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.frontierscum .char-sheet-body .equipment-block .eq-row {
+  display: flex;
+  flex: column;
+  flex: 0 0 30px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 2px;
+}
+.frontierscum .char-sheet-body .equipment-block .eq-row input {
+  width: 100%;
+}
+.frontierscum .char-sheet-body .equipment-block .eq-section.skills {
+  justify-content: space-between;
+}
+.frontierscum .char-sheet-body .equipment-block .eq-section.skills .skills-label {
+  border-bottom: 2px solid black;
+  flex: 0 0 30px;
+  font-family: "Ultra", serif;
+  text-align: center;
+  line-height: 1.5em;
+}
+.frontierscum .char-sheet-body .equipment-block .eq-section.on-your-back {
+  margin-top: 4px;
+}
+.frontierscum .char-sheet-body .equipment-block .eq-section.on-your-back .eq-row {
+  flex: 0 0 40px;
+}
+.frontierscum .char-sheet-body .equipment-block .eq-section.in-your-pockets {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  height: 304px;
+}
+.frontierscum .char-sheet-body .equipment-block .eq-section.in-your-pockets .eq-row {
+  border-left: none;
+  border-right: none;
+  flex: 0 0 23px;
 }

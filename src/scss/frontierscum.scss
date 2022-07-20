@@ -3,8 +3,7 @@
 $cursive-font: 'Satisfy', cursive;
 $logo-font: 'Smokum', cursive;
 $slab-font: 'Ultra', serif;
-//$label-font: 'Smokum', cursive;
-$label-font: 'Ultra', serif;
+$label-font: 'Smokum', cursive;
 $mono-font: 'Inconsolata', monospace;
 $serif-font: 'Alegreya', serif;
 $border: 2px solid black;
@@ -38,7 +37,7 @@ $light-gray: #eeeeee;
     background-color: black;
     color: white;
     font-family: $label-font;
-    font-size: 0.8em;
+    font-size: 1.3em;
     text-align: center;
     text-transform: uppercase;
   }
@@ -70,6 +69,7 @@ $light-gray: #eeeeee;
   .char-sheet-body {
     display: flex;
     flex-direction: column;
+
     .name-block {
       display: flex;
       margin-bottom: 10px;
@@ -77,11 +77,11 @@ $light-gray: #eeeeee;
       .fields {
         display: flex;
         flex-direction: column;
-        flex: 0 0 590px;
+        flex: 0 0 614px;
         width: 100%;
         label {
           font-family: $label-font;
-          font-size: 0.7em;
+          font-size: 1.2em;
           margin-right: 4px;
         }
         input {
@@ -93,24 +93,26 @@ $light-gray: #eeeeee;
         }
       }
       .rewards {
-        flex: 0 0 50px;
+        flex: 0 0 100px;
         margin-left: 10px;
         text-align: center;
         label {
-          font-family: $label-font;
+          font-family: $slab-font;
           font-size: 0.9em;
         }
         textarea {
-          width: 100px;
+          height: 55px;
+          width: 105px;
         }
       }
     }
+
     .abilities-block {
       display: flex;
       margin-bottom: 10px;
       .ability-col {
         display: flex;
-        flex: 0 0 120;
+        flex: 0 0 90px;
         flex-direction: column;
         .ability {
           align-items: center;
@@ -137,7 +139,7 @@ $light-gray: #eeeeee;
             width: 100%;
             input {
               text-align: center;
-              width: 50px;
+              width: 30px;
             }
           }
         }
@@ -218,7 +220,7 @@ $light-gray: #eeeeee;
           width: 100px;
         }
         .name {
-          font-family: $label-font;
+          font-family: $slab-font;
           font-size: 1.2em;
         }
         .value {
@@ -227,7 +229,69 @@ $light-gray: #eeeeee;
       }
     }
     .equipment-block {
-
+      display: flex;
+      .eq-col-1 {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      .eq-col-2 {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin-left: 2px;
+        margin-right: 2px;
+      }
+      .eq-col-3 {
+        display: flex;
+        flex-direction: column;
+        flex: 1;        
+      }      
+      .eq-section {
+        border-bottom: $border;
+        display: flex;
+        flex-direction: column;
+      }
+      .eq-row {
+        display: flex;
+        flex: column;
+        flex: 0 0 30px;
+        border-left: $border;
+        border-right: $border;
+        padding: 2px;
+        input {
+          width: 100%;
+        }
+      }
+      .eq-section.skills {
+        justify-content: space-between;
+        .skills-label {
+          border-bottom: $border;
+          flex: 0 0 30px;
+          font-family: $slab-font;
+          text-align: center;
+          line-height: 1.5em;
+        }  
+        // .eq-row:first-child {
+        //   border-top: $border;
+        // }
+      }
+      .eq-section.on-your-back {
+        margin-top: 4px;
+        .eq-row {
+          flex: 0 0 40px;
+        }
+      }
+      .eq-section.in-your-pockets {
+        border-left: $border;
+        border-right: $border;
+        height: 304px;
+        .eq-row {
+          border-left: none;
+          border-right: none;
+          flex: 0 0 23px;
+        }          
+      }      
     }
   }
 }
