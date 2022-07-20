@@ -281,8 +281,8 @@
 .frontierscum .horsesheet-header .title {
   color: black;
   font-family: "Rye", cursive;
-  font-size: 8em;
-  letter-spacing: 0.2em;
+  font-size: 7em;
+  letter-spacing: 0.3em;
   line-height: 0.85em;
   padding-left: 10px;
   text-align: center;
@@ -291,26 +291,108 @@
   -webkit-text-stroke-color: black;
 }
 .frontierscum .horsesheet-header .rider {
-  background-image: url("img/rider.png");
+  background-image: url("img/rider1.png");
   background-size: 100% 100%;
   height: 300px;
   width: 300px;
   position: absolute;
-  top: 100;
+  top: 30;
   left: 400px;
 }
 
 .frontierscum .horsesheet-body {
-  border-bottom: 5px solid black;
-  border-left: 5px solid black;
-  border-right: 5px solid black;
   display: flex;
-  height: 500px;
-  padding: 10px;
+  padding: 20px;
 }
-.frontierscum .horsesheet-body .inner {
+.frontierscum .horsesheet-body input {
+  width: 100%;
+}
+.frontierscum .horsesheet-body .inner1 {
+  padding: 2px;
+}
+.frontierscum .horsesheet-body .inner1, .frontierscum .horsesheet-body .inner2 {
   border-bottom: 5px solid black;
   border-left: 5px solid black;
   border-right: 5px solid black;
   flex: 1;
+}
+.frontierscum .horsesheet-body .name-block {
+  margin-bottom: 4px;
+  padding: 5px;
+}
+.frontierscum .horsesheet-body .name-block .field-row {
+  display: flex;
+  margin-bottom: 4px;
+}
+.frontierscum .horsesheet-body .name-block .field-row label {
+  font-family: "Smokum", cursive;
+  font-size: 1.2em;
+  margin-right: 4px;
+}
+.frontierscum .horsesheet-body .on-your-horse {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.frontierscum .horsesheet-body .on-your-horse .top-label {
+  margin-bottom: 10px;
+}
+.frontierscum .horsesheet-body .on-your-horse .on-horse-row {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 35px;
+  padding: 2px;
+}
+.frontierscum .horsesheet-body .stolen-block {
+  display: flex;
+  justify-content: center;
+}
+.frontierscum .horsesheet-body .stolen-block .stats {
+  width: 300px;
+}
+.frontierscum .horsesheet-body .stolen-block .stats .stat-row {
+  display: flex;
+}
+.frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+.frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block label {
+  font-family: "Ultra", serif;
+  font-size: 1em;
+  margin-right: 8px;
+  width: 100px;
+  text-align: right;
+}
+.frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block .horseshoe {
+  background-image: url("img/horseshoe.png");
+  background-size: 100% 100%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block .horseshoe input {
+  margin-right: 8px;
+  width: 30px;
+}
+.frontierscum .horsesheet-body .horse1 {
+  background-image: url("img/horsehead1.png");
+  background-size: 100% 100%;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  left: 40;
+  top: 760px;
+}
+.frontierscum .horsesheet-body .horse2 {
+  background-image: url("img/horsehead2.png");
+  background-size: 100% 100%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 560;
+  top: 740px;
 }
