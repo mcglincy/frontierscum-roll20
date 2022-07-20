@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Smokum&family=Satisfy&family=Inconsolata&family=Ultra&family=Alegreya&family=Rye&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smokum&family=Satisfy&family=Inconsolata&family=Ultra&family=Alegreya&display=swap");
 .frontierscum input[type=number],
 .frontierscum input[type=text] {
   border: 0;
@@ -280,9 +280,9 @@
 
 .frontierscum .horsesheet-header .title {
   color: black;
-  font-family: "Rye", cursive;
+  font-family: "Ultra", serif;
   font-size: 7em;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   line-height: 0.85em;
   padding-left: 25px;
   text-align: center;
