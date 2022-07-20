@@ -330,7 +330,7 @@
   font-size: 1.2em;
   margin-right: 4px;
 }
-.frontierscum .horsesheet-body .name-block .field-row.name-row input {
+.frontierscum .horsesheet-body .name-block .field-row input {
   padding-left: 10px;
   text-align: left;
 }
@@ -380,7 +380,7 @@
 }
 .frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block .horseshoe input {
   margin-right: 8px;
-  width: 30px;
+  width: 20px;
 }
 .frontierscum .horsesheet-body .horse1 {
   background-image: url("img/horsehead1.png");
