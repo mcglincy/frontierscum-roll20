@@ -1,5 +1,6 @@
 .frontierscum .horsesheet-body {
   display: flex;
+  padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
   input {
@@ -15,7 +16,6 @@
     flex: 1;
   }
   .name-block {
-    margin-bottom: 4px;
     padding: 5px;
     .field-row {
       display: flex;
@@ -25,6 +25,12 @@
         font-size: 1.2em;
         margin-right: 4px;
       }      
+    }
+    .field-row.name-row {
+      input {
+        padding-left: 10px;
+        text-align: left;
+      }
     }
   }
   .on-your-horse {
@@ -38,8 +44,6 @@
       border-bottom: $border;
       flex: 0 0 20px;
       padding: 5px;
-      input {
-      }
     }
   }
   .stolen-block {
@@ -92,7 +96,7 @@
     width: 200px;
     height: 200px;
     position: absolute;
-    left: 560;
+    left: 551;
     top: 710px;
   }
 

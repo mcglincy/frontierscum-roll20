@@ -293,8 +293,8 @@
 .frontierscum .horsesheet-header .rider {
   background-image: url("img/rider1.png");
   background-size: 100% 100%;
-  height: 300px;
-  width: 300px;
+  height: 290px;
+  width: 290px;
   position: absolute;
   top: 10;
   left: 400px;
@@ -302,6 +302,7 @@
 
 .frontierscum .horsesheet-body {
   display: flex;
+  padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -318,7 +319,6 @@
   flex: 1;
 }
 .frontierscum .horsesheet-body .name-block {
-  margin-bottom: 4px;
   padding: 5px;
 }
 .frontierscum .horsesheet-body .name-block .field-row {
@@ -329,6 +329,10 @@
   font-family: "Smokum", cursive;
   font-size: 1.2em;
   margin-right: 4px;
+}
+.frontierscum .horsesheet-body .name-block .field-row.name-row input {
+  padding-left: 10px;
+  text-align: left;
 }
 .frontierscum .horsesheet-body .on-your-horse {
   display: flex;
@@ -393,6 +397,6 @@
   width: 200px;
   height: 200px;
   position: absolute;
-  left: 560;
+  left: 551;
   top: 710px;
 }
