@@ -271,3 +271,8 @@
   border-right: none;
   flex: 0 0 23px;
 }
+
+.frontierscum .horsesheet-header {
+  font-family: "Rye", cursive;
+  border: 1px solid red;
+}

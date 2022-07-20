@@ -1,230 +1,228 @@
-.frontierscum {
-  .charsheet-body {
+.frontierscum .charsheet-body {
+  display: flex;
+  flex-direction: column;
+
+  .name-block {
     display: flex;
-    flex-direction: column;
-
-    .name-block {
+    margin-bottom: 10px;
+    width: 100%;
+    .fields {
       display: flex;
-      margin-bottom: 10px;
+      flex-direction: column;
+      flex: 0 0 614px;
       width: 100%;
-      .fields {
+      label {
+        font-family: $label-font;
+        font-size: 1.2em;
+        margin-right: 4px;
+      }
+      input {
+        flex: 1;
+      }
+      .field-row {
         display: flex;
-        flex-direction: column;
-        flex: 0 0 614px;
         width: 100%;
-        label {
-          font-family: $label-font;
-          font-size: 1.2em;
-          margin-right: 4px;
-        }
-        input {
-          flex: 1;
-        }
-        .field-row {
-          display: flex;
-          width: 100%;
-        }
-      }
-      .rewards {
-        flex: 0 0 100px;
-        margin-left: 10px;
-        text-align: center;
-        label {
-          font-family: $slab-font;
-          font-size: 0.9em;
-        }
-        textarea {
-          height: 55px;
-          width: 105px;
-        }
       }
     }
+    .rewards {
+      flex: 0 0 100px;
+      margin-left: 10px;
+      text-align: center;
+      label {
+        font-family: $slab-font;
+        font-size: 0.9em;
+      }
+      textarea {
+        height: 55px;
+        width: 105px;
+      }
+    }
+  }
 
-    .abilities-block {
+  .abilities-block {
+    display: flex;
+    margin-bottom: 10px;
+    .ability-col {
       display: flex;
-      margin-bottom: 10px;
-      .ability-col {
-        display: flex;
-        flex: 0 0 90px;
-        flex-direction: column;
-        .ability {
-          align-items: center;
-          border-bottom: none;
-          border-left: $border;
-          border-right: none;
-          border-top: none;
-          display: flex;
-          flex: 0 0 72px;
-          flex-direction: column;
-          .name {
-            background-color: black;
-            color: white;
-            flex: 0 0 30px;
-            width: 100%;
-          }
-          .value {
-            align-items: center;
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-            justify-content: center;
-            padding: 4px;
-            width: 100%;
-            input {
-              text-align: center;
-              width: 30px;
-            }
-          }
-        }
-        .ability:last-child {
-          border-bottom: $border;
-        } 
-      }
-      .portrait-col {
-        border: 2px solid black;
-        flex: 0 0 280;
-        padding: 4px;
+      flex: 0 0 90px;
+      flex-direction: column;
+      .ability {
         align-items: center;
+        border-bottom: none;
+        border-left: $border;
+        border-right: none;
+        border-top: none;
         display: flex;
-        justify-content: center;
-      .portrait-inner {
-          border: 2px solid black;
-          img {
-            height: 274px;
-            width: 274px;
-          }  
-        }
-      }
-      .condition-col {
-        display: flex;
-        margin-left: 2px;
-        flex: 0 0 350px;
+        flex: 0 0 72px;
         flex-direction: column;
-        justify-content: space-between;
-        border: $border;
-        .conditions-and-notes {
-          flex: 0 0 30px;
-        }
-        .condition-row {
-          display: flex;
-          flex: 0 0 45px;
-          font-family: $mono-font;
-          font-size: 0.7em;
-          padding: 4px;
-          .checkbox {
-            display: flex;
-            align-items: center;
-            justify-content: center;;
-            flex: 0 0 50px;
-          }
-          .non-checkbox {
-            flex: 1;
-            input {
-              width: 60px;
-            }
-          }
-        }        
-        .miserable {
-        }
-        .drunk {
-          border-top: $border;
-        }
-        .notes {
-          border-top: $border;
-          flex: 0 0 62px;
-          padding: 4px;
-          textarea {
-            border: none;
-            height: 100%;
-            width: 100%;
-          }
-        }
-      }
-    }
-    .hp-block {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 10px;
-      .stat-block {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        input {
-          width: 100px;
-        }
         .name {
-          font-family: $slab-font;
-          font-size: 1.2em;
+          background-color: black;
+          color: white;
+          flex: 0 0 30px;
+          width: 100%;
         }
         .value {
-
+          align-items: center;
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          justify-content: center;
+          padding: 4px;
+          width: 100%;
+          input {
+            text-align: center;
+            width: 30px;
+          }
         }
       }
-    }
-    .equipment-block {
-      display: flex;
-      .eq-col-1 {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-      }
-      .eq-col-2 {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        margin-left: 2px;
-        margin-right: 2px;
-      }
-      .eq-col-3 {
-        display: flex;
-        flex-direction: column;
-        flex: 1;        
-      }      
-      .eq-section {
+      .ability:last-child {
         border-bottom: $border;
-        display: flex;
-        flex-direction: column;
+      } 
+    }
+    .portrait-col {
+      border: 2px solid black;
+      flex: 0 0 280;
+      padding: 4px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    .portrait-inner {
+        border: 2px solid black;
+        img {
+          height: 274px;
+          width: 274px;
+        }  
       }
-      .eq-row {
-        display: flex;
-        flex: column;
+    }
+    .condition-col {
+      display: flex;
+      margin-left: 2px;
+      flex: 0 0 350px;
+      flex-direction: column;
+      justify-content: space-between;
+      border: $border;
+      .conditions-and-notes {
         flex: 0 0 30px;
-        border-left: $border;
-        border-right: $border;
-        padding: 2px;
-        input {
+      }
+      .condition-row {
+        display: flex;
+        flex: 0 0 45px;
+        font-family: $mono-font;
+        font-size: 0.7em;
+        padding: 4px;
+        .checkbox {
+          display: flex;
+          align-items: center;
+          justify-content: center;;
+          flex: 0 0 50px;
+        }
+        .non-checkbox {
+          flex: 1;
+          input {
+            width: 60px;
+          }
+        }
+      }        
+      .miserable {
+      }
+      .drunk {
+        border-top: $border;
+      }
+      .notes {
+        border-top: $border;
+        flex: 0 0 62px;
+        padding: 4px;
+        textarea {
+          border: none;
+          height: 100%;
           width: 100%;
         }
       }
-      .eq-section.skills {
-        justify-content: space-between;
-        .skills-label {
-          border-bottom: $border;
-          flex: 0 0 30px;
-          font-family: $slab-font;
-          text-align: center;
-          line-height: 1.5em;
-        }  
-        // .eq-row:first-child {
-        //   border-top: $border;
-        // }
-      }
-      .eq-section.on-your-back {
-        margin-top: 4px;
-        .eq-row {
-          flex: 0 0 40px;
-        }
-      }
-      .eq-section.in-your-pockets {
-        border-left: $border;
-        border-right: $border;
-        height: 304px;
-        .eq-row {
-          border-left: none;
-          border-right: none;
-          flex: 0 0 23px;
-        }          
-      }      
     }
+  }
+  .hp-block {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    .stat-block {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      input {
+        width: 100px;
+      }
+      .name {
+        font-family: $slab-font;
+        font-size: 1.2em;
+      }
+      .value {
+
+      }
+    }
+  }
+  .equipment-block {
+    display: flex;
+    .eq-col-1 {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .eq-col-2 {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+    .eq-col-3 {
+      display: flex;
+      flex-direction: column;
+      flex: 1;        
+    }      
+    .eq-section {
+      border-bottom: $border;
+      display: flex;
+      flex-direction: column;
+    }
+    .eq-row {
+      display: flex;
+      flex: column;
+      flex: 0 0 30px;
+      border-left: $border;
+      border-right: $border;
+      padding: 2px;
+      input {
+        width: 100%;
+      }
+    }
+    .eq-section.skills {
+      justify-content: space-between;
+      .skills-label {
+        border-bottom: $border;
+        flex: 0 0 30px;
+        font-family: $slab-font;
+        text-align: center;
+        line-height: 1.5em;
+      }  
+      // .eq-row:first-child {
+      //   border-top: $border;
+      // }
+    }
+    .eq-section.on-your-back {
+      margin-top: 4px;
+      .eq-row {
+        flex: 0 0 40px;
+      }
+    }
+    .eq-section.in-your-pockets {
+      border-left: $border;
+      border-right: $border;
+      height: 304px;
+      .eq-row {
+        border-left: none;
+        border-right: none;
+        flex: 0 0 23px;
+      }          
+    }      
   }
 }
