@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Smokum&family=Satisfy&family=Inconsolata&family=Ultra&family=Alegreya&display=swap");
-.frontierscum {
-  border: 1px solid black;
-  padding: 20px;
-}
 .frontierscum input[type=number],
 .frontierscum input[type=text] {
   border: 0;
@@ -26,6 +22,7 @@
   text-align: center;
   text-transform: uppercase;
 }
+
 .frontierscum .char-sheet-header {
   align-items: center;
   display: flex;
@@ -49,6 +46,7 @@
   font-family: "Satisfy", cursive;
   font-size: 1.5em;
 }
+
 .frontierscum .char-sheet-body {
   display: flex;
   flex-direction: column;
@@ -266,4 +264,9 @@
   border-left: none;
   border-right: none;
   flex: 0 0 23px;
+}
+
+.frontierscum {
+  border: 1px solid black;
+  padding: 20px;
 }

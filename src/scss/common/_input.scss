@@ -1,0 +1,27 @@
+.frontierscum {
+  input[type='number'],
+  input[type='text'] {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: $dotted;
+    font-family: $mono-font;
+    text-align: center;
+  }
+
+  textarea {
+    background-color: $light-gray;
+    border: none;
+    font-family: $mono-font;
+    resize: none;
+  }
+
+  .top-label {
+    background-color: black;
+    color: white;
+    font-family: $label-font;
+    font-size: 1.3em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
