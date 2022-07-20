@@ -1,6 +1,7 @@
 .frontierscum .horsesheet-body {
   display: flex;
-  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   input {
     width: 100%;
   }  
@@ -34,12 +35,11 @@
       margin-bottom: 10px;
     }
     .on-horse-row {
-      display: flex;
-      flex-direction: column;
-      // border-bottom: $border;
-      flex: 0 0 35px;
-      padding: 2px;
-
+      border-bottom: $border;
+      flex: 0 0 20px;
+      padding: 5px;
+      input {
+      }
     }
   }
   .stolen-block {
@@ -84,7 +84,7 @@
     width: 200px;
     position: absolute;
     left: 40;
-    top: 760px;
+    top: 710px;
   }  
   .horse2 {
     background-image: url('img/horsehead2.png');
@@ -93,7 +93,7 @@
     height: 200px;
     position: absolute;
     left: 560;
-    top: 740px;
+    top: 710px;
   }
 
 }
