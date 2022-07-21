@@ -231,9 +231,6 @@ body.sheet-darkmode .charsheet .frontierscum .horsesheet-body .inner1, body.shee
   border-left: 5px solid white;
   border-right: 5px solid white;
 }
-body.sheet-darkmode .charsheet .frontierscum .horsesheet-body .on-your-horse .on-horse-row {
-  border-bottom: 2px solid white;
-}
 body.sheet-darkmode .charsheet .frontierscum .scumsheet-header .fs-logo {
   border-bottom: 4px solid white;
   border-top: 4px solid white;
@@ -269,14 +266,16 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .condition-col .not
   border-top: 2px solid white;
 }
 body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .eq-section {
-  border-bottom: 2px solid white;
-}
-body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .eq-row {
   border-left: 2px solid white;
   border-right: 2px solid white;
+  border-bottom: 2px solid white;
 }
 body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .eq-section.skills .skills-label {
   border-bottom: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .eq-section.skills .eq-row {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
 
 .charsheet .frontierscum .scumsheet-header {
@@ -393,12 +392,12 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   border-bottom: 2px solid black;
 }
 .frontierscum .scumsheet-body .abilities-block .portrait-col {
-  border: 2px solid black;
-  flex: 0 0 280;
-  padding: 4px;
   align-items: center;
+  border: 2px solid black;
   display: flex;
+  flex: 0 0 290px;
   justify-content: center;
+  padding: 4px;
 }
 .frontierscum .scumsheet-body .abilities-block .portrait-col .portrait-inner {
   border: 2px solid black;
@@ -410,7 +409,7 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 .frontierscum .scumsheet-body .abilities-block .condition-col {
   display: flex;
   margin-left: 2px;
-  flex: 0 0 350px;
+  flex: 0 0 314px;
   flex-direction: column;
   border: 2px solid black;
 }
@@ -496,6 +495,8 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 }
 .frontierscum .scumsheet-body .equipment-block .eq-section {
   border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
   display: flex;
   flex-direction: column;
 }
@@ -503,14 +504,14 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   display: flex;
   flex: column;
   flex: 0 0 30px;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
   padding: 2px;
 }
 .frontierscum .scumsheet-body .equipment-block .eq-row input {
   width: 100%;
 }
 .frontierscum .scumsheet-body .equipment-block .eq-section.skills {
+  border-left: none;
+  border-right: none;
   justify-content: space-between;
 }
 .frontierscum .scumsheet-body .equipment-block .eq-section.skills .skills-label {
@@ -522,6 +523,10 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   text-align: center;
   line-height: 2rem;
 }
+.frontierscum .scumsheet-body .equipment-block .eq-section.skills .eq-row {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
 .frontierscum .scumsheet-body .equipment-block .eq-section.on-your-back {
   margin-top: 3px;
 }
@@ -529,14 +534,17 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   flex: 0 0 38px;
 }
 .frontierscum .scumsheet-body .equipment-block .eq-section.in-your-pockets {
+  justify-content: space-between;
+  border-bottom: 2px solid black;
   border-left: 2px solid black;
   border-right: 2px solid black;
   height: 284px;
 }
 .frontierscum .scumsheet-body .equipment-block .eq-section.in-your-pockets .eq-row {
+  border-bottom: none;
   border-left: none;
   border-right: none;
-  flex: 0 0 25px;
+  flex: 0 0 24px;
 }
 .frontierscum .scumsheet-body .equipment-block .eq-section.in-your-pockets .eq-row input {
   font-size: 1.3rem;
@@ -604,7 +612,6 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   width: 100%;
 }
 .charsheet .frontierscum .horsesheet-body .on-your-horse .on-horse-row {
-  border-bottom: 2px solid black;
   flex: 0 0 20px;
   padding: 2px;
 }

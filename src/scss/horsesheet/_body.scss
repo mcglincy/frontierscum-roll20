@@ -35,17 +35,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    .top-label {
-      //margin-bottom: 10px;
-    }
     .on-horse-row {
-      border-bottom: $border;
-      // border: 1px solid green;
       flex: 0 0 20px;
       padding: 2px;
-      input {
-        // border: 1px solid red;
-      }
     }
   }
   .stolen-block {
