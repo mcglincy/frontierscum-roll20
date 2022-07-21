@@ -89,12 +89,36 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   background-color: transparent;
 }
 
+.scum, .horse {
+  display: none;
+}
+
+input[name*=sheet_mode][value=scum] ~ * .scum {
+  display: block !important;
+}
+input[name*=sheet_mode][value=horse] ~ * .horse {
+  display: block !important;
+}
+
+.sheet-selector {
+  font-size: 2rem;
+  position: absolute;
+  top: 80px;
+  left: 720px;
+  color: grey;
+  filter: grayscale(100%);
+}
+
+.charsheet .frontierscum {
+  padding: 20px;
+  width: 738px;
+  border: 1px solid black;
+}
+
 .frontierscum {
   /* Hide the browser's default checkbox */
   /* Create a custom checkbox */
-  /* On mouse-over, add a grey background color */
   /* When the checkbox is checked, add a blue background */
-  /* Style the checkmark/indicator */
 }
 .frontierscum input[type=number],
 .frontierscum input[type=text] {
@@ -111,6 +135,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   border: none;
   font-family: "Inconsolata", monospace;
   font-size: 1.8rem;
+  padding: 2px;
   resize: none;
 }
 .frontierscum .top-label {
@@ -166,6 +191,92 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 }
 .frontierscum .check-container input:checked ~ .checkmark:after {
   display: block;
+}
+
+body.sheet-darkmode .charsheet {
+  background-color: black;
+  color: white;
+}
+body.sheet-darkmode .charsheet .frontierscum {
+  border: 1px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum input[type=number],
+body.sheet-darkmode .charsheet .frontierscum input[type=text] {
+  border-bottom: 1px dotted white;
+}
+body.sheet-darkmode .charsheet .frontierscum textarea {
+  background-color: #333;
+}
+body.sheet-darkmode .charsheet .frontierscum .top-label {
+  background-color: white;
+  color: black;
+}
+body.sheet-darkmode .charsheet .frontierscum .checkmark {
+  border: 1px dotted white;
+}
+body.sheet-darkmode .charsheet .frontierscum .check-container input:checked ~ .checkmark {
+  background-color: white;
+}
+body.sheet-darkmode .charsheet .frontierscum .horsesheet-header .title {
+  color: white;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+body.sheet-darkmode .charsheet .frontierscum .horsesheet-header .rider {
+  filter: invert(100%);
+}
+body.sheet-darkmode .charsheet .frontierscum .horsesheet-body .inner1, body.sheet-darkmode .charsheet .frontierscum .horsesheet-body .inner2 {
+  border-bottom: 5px solid white;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .horsesheet-body .on-your-horse .on-horse-row {
+  border-bottom: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-header .fs-logo {
+  border-bottom: 4px solid white;
+  border-top: 4px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .abilities-block .ability-col .ability {
+  border-left: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .abilities-block .ability-col .ability .name {
+  background-color: white;
+  color: black;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .abilities-block .ability-col .ability:last-child {
+  border-bottom: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .portrait-col {
+  border: 2px solid white;
+  flex: 0 0 280;
+  padding: 4px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .portrait-col .portrait-inner {
+  border: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .condition-col {
+  border: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .condition-col .drunk {
+  border-top: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .condition-col .notes {
+  border-top: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .eq-section {
+  border-bottom: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .eq-row {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .eq-section.skills .skills-label {
+  border-bottom: 2px solid white;
 }
 
 .charsheet .frontierscum .scumsheet-header {
@@ -301,7 +412,6 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   margin-left: 2px;
   flex: 0 0 350px;
   flex-direction: column;
-  justify-content: space-between;
   border: 2px solid black;
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col .conditions-and-notes {
@@ -309,8 +419,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col .condition-row {
   display: flex;
-  flex: 0 0 45px;
-  padding: 4px;
+  flex: 0 0 44px;
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col .condition-row .checkbox {
   display: flex;
@@ -335,7 +444,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col .notes {
   border-top: 2px solid black;
-  flex: 0 0 62px;
+  flex: 0 0 55px;
   padding: 4px;
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col .notes textarea {
@@ -422,7 +531,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .frontierscum .scumsheet-body .equipment-block .eq-section.in-your-pockets {
   border-left: 2px solid black;
   border-right: 2px solid black;
-  height: 285px;
+  height: 284px;
 }
 .frontierscum .scumsheet-body .equipment-block .eq-section.in-your-pockets .eq-row {
   border-left: none;
@@ -554,30 +663,4 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   position: absolute;
   left: 540px;
   top: 778px;
-}
-
-.scum, .horse {
-  display: none;
-}
-
-input[name*=sheet_mode][value=scum] ~ * .scum {
-  display: block !important;
-}
-input[name*=sheet_mode][value=horse] ~ * .horse {
-  display: block !important;
-}
-
-.sheet-selector {
-  font-size: 2rem;
-  position: absolute;
-  top: 80px;
-  left: 720px;
-  color: grey;
-  filter: grayscale(100%);
-}
-
-.charsheet .frontierscum {
-  padding: 20px;
-  width: 738px;
-  border: 1px solid black;
 }

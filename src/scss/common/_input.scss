@@ -15,6 +15,7 @@
     border: none;
     font-family: $mono-font;
     font-size: 1.8rem;
+    padding: 2px;
     resize: none;
   }
 
@@ -70,11 +71,6 @@
     font-size: 2rem;
   }
 
-  /* On mouse-over, add a grey background color */
-  // .check-container:hover input ~ .checkmark {
-  //   background-color: #ccc;
-  // }
-
   /* When the checkbox is checked, add a blue background */
   .check-container input:checked ~ .checkmark {
     background-color: black;
@@ -88,18 +84,5 @@
 
   .check-container input:checked ~ .checkmark:after {
     display: block;
-  }
-
-  /* Style the checkmark/indicator */
-  // .check-container .checkmark:after {
-  //   left: 9px;
-  //   top: 5px;
-  //   width: 5px;
-  //   height: 10px;
-  //   border: solid white;
-  //   border-width: 0 3px 3px 0;
-  //   -webkit-transform: rotate(45deg);
-  //   -ms-transform: rotate(45deg);
-  //   transform: rotate(45deg);
-  // }  
+  } 
 }
