@@ -1,3 +1,10 @@
+input(type=`hidden`, name=`attr_sheet_mode`, value=`scum`)
 .frontierscum
-  //include scumsheet/layout
-  include horsesheet/layout
+  .sheet-selector 
+    select(name='attr_sheet_mode')
+      option(value='scum') &#129312;
+      option(value='horse') &#128014;
+  main.scum
+    include scumsheet/layout
+  main.horse
+    include horsesheet/layout

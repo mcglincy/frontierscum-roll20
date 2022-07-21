@@ -1,22 +1,16 @@
 
-.charsheet .frontierscum .horsesheet {
-  border: 1px solid black;
-  padding: 20px;
-  width: 738px;
-}
-
 .charsheet .frontierscum .horsesheet-header {
   .title {
     color: black;
     font-family: $slab-font;
-    font-size: 8rem;
-    //letter-spacing: 0.2rem;
-    line-height: 7rem;
+    font-size: 13rem;
+    letter-spacing: 2.5rem;
+    line-height: 11rem;
     // TODO: debug why we're not actually
     padding-left: 25px;
     text-align: center;
     -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
   }
   .rider {
@@ -25,7 +19,7 @@
     height: 290px;
     width: 290px;
     position: absolute;
-    top: 10;
+    top: 50px;
     left: 400px;
   }
 }

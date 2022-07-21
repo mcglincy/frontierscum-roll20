@@ -121,12 +121,6 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   width: unset;
 }
 
-.chaesheet .frontierscum .scumsheet {
-  border: 1px solid black;
-  padding: 20px;
-  width: 738px;
-}
-
 .charsheet .frontierscum .scumsheet-header {
   align-items: center;
   display: flex;
@@ -164,7 +158,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .frontierscum .scumsheet-body .name-block .fields {
   display: flex;
   flex-direction: column;
-  flex: 0 0 614px;
+  flex: 0 0 562px;
   width: 100%;
 }
 .frontierscum .scumsheet-body .name-block .fields label {
@@ -319,19 +313,19 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .frontierscum .scumsheet-body .equipment-block .eq-col-1 {
   display: flex;
   flex-direction: column;
-  flex: 0 0 243px;
+  flex: 0 0 230px;
 }
 .frontierscum .scumsheet-body .equipment-block .eq-col-2 {
   display: flex;
   flex-direction: column;
-  flex: 0 0 243px;
+  flex: 0 0 232px;
   margin-left: 2px;
   margin-right: 2px;
 }
 .frontierscum .scumsheet-body .equipment-block .eq-col-3 {
   display: flex;
   flex-direction: column;
-  flex: 0 0 243px;
+  flex: 0 0 230px;
 }
 .frontierscum .scumsheet-body .equipment-block .eq-section {
   border-bottom: 2px solid black;
@@ -381,21 +375,16 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   font-size: 1.3rem;
 }
 
-.charsheet .frontierscum .horsesheet {
-  border: 1px solid black;
-  padding: 20px;
-  width: 738px;
-}
-
 .charsheet .frontierscum .horsesheet-header .title {
   color: black;
   font-family: "Ultra", serif;
-  font-size: 8rem;
-  line-height: 7rem;
+  font-size: 13rem;
+  letter-spacing: 2.5rem;
+  line-height: 11rem;
   padding-left: 25px;
   text-align: center;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 }
 .charsheet .frontierscum .horsesheet-header .rider {
@@ -404,7 +393,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   height: 290px;
   width: 290px;
   position: absolute;
-  top: 10;
+  top: 50px;
   left: 400px;
 }
 
@@ -435,7 +424,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 }
 .charsheet .frontierscum .horsesheet-body .name-block .field-row label {
   font-family: "Smokum", cursive;
-  font-size: 1.2em;
+  font-size: 2.5rem;
   margin-right: 4px;
 }
 .charsheet .frontierscum .horsesheet-body .name-block .field-row input {
@@ -447,13 +436,10 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   flex-direction: column;
   width: 100%;
 }
-.charsheet .frontierscum .horsesheet-body .on-your-horse .top-label {
-  margin-bottom: 10px;
-}
 .charsheet .frontierscum .horsesheet-body .on-your-horse .on-horse-row {
   border-bottom: 2px solid black;
   flex: 0 0 20px;
-  padding: 5px;
+  padding: 2px;
 }
 .charsheet .frontierscum .horsesheet-body .stolen-block {
   display: flex;
@@ -464,17 +450,17 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 }
 .charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row {
   display: flex;
+  justify-content: center;
 }
 .charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block {
   display: flex;
   align-items: center;
-  width: 200px;
 }
 .charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block label {
   font-family: "Ultra", serif;
-  font-size: 1em;
+  font-size: 2rem;
   margin-right: 8px;
-  width: 100px;
+  width: 120px;
   text-align: right;
 }
 .charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block .horseshoe {
@@ -490,21 +476,50 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   margin-right: 8px;
   width: 20px;
 }
+.charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block:last-child label {
+  width: 80px;
+}
 .charsheet .frontierscum .horsesheet-body .horse1 {
   background-image: url("https://raw.githubusercontent.com/mcglincy/frontierscum-roll20/main/img/horsehead1.png");
   background-size: 100% 100%;
-  height: 200px;
-  width: 200px;
+  height: 190px;
+  width: 190px;
   position: absolute;
-  left: 40;
-  top: 710px;
+  left: 62px;
+  top: 780px;
 }
 .charsheet .frontierscum .horsesheet-body .horse2 {
   background-image: url("https://raw.githubusercontent.com/mcglincy/frontierscum-roll20/main/img/horsehead2.png");
   background-size: 100% 100%;
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
   position: absolute;
-  left: 551;
-  top: 710px;
+  left: 540px;
+  top: 778px;
+}
+
+.scum, .horse {
+  display: none;
+}
+
+input[name*=sheet_mode][value=scum] ~ * .scum {
+  display: block !important;
+}
+input[name*=sheet_mode][value=horse] ~ * .horse {
+  display: block !important;
+}
+
+.sheet-selector {
+  font-size: 2rem;
+  position: absolute;
+  top: 80px;
+  left: 720px;
+  color: grey;
+  filter: grayscale(100%);
+}
+
+.charsheet .frontierscum {
+  padding: 20px;
+  width: 738px;
+  border: 1px solid black;
 }
