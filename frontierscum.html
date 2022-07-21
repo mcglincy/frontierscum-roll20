@@ -13,14 +13,14 @@
         <div class="fs-logo">FRONTIER SCUM</div>
         <div class="wanted">WANTED</div>
         <div class="dead-or-alive">
-          <label class="radio-visible">
-            <input type="radio" name="dead_or_alive" value="dead_or_alive" checked="true"/>&nbsp;Dead or Alive&nbsp;
+          <label class="check-container">
+            <input type="radio" name="dead_or_alive" value="dead_or_alive" checked="true"/><span class="checkmark">  </span>&nbsp;Dead or Alive&nbsp;
+          </label>/ 
+          <label class="check-container">
+            <input type="radio" name="dead_or_alive" value="dead"/><span class="checkmark">  </span>&nbsp;Dead&nbsp;
           </label>/
-          <label class="radio-visible">
-            <input type="radio" name="dead_or_alive" value="dead"/>&nbsp;Dead&nbsp;
-          </label>/
-          <label class="radio-visible">
-            <input type="radio" name="dead_or_alive" value="alive"/>&nbsp;Alive&nbsp;
+          <label class="check-container">
+            <input type="radio" name="dead_or_alive" value="alive"/><span class="checkmark">  </span>&nbsp;Alive&nbsp;
           </label>
         </div>
       </div>
@@ -79,7 +79,9 @@
             <div class="top-label conditions-and-notes">Conditions & Notes</div>
             <div class="condition-row miserable"> 
               <div class="checkbox">
-                <input type="checkbox" name="attr_miserable"/>
+                <label class="check-container">
+                  <input type="checkbox" name="attr_miserable"/><span class="checkmark">       </span>
+                </label>
               </div>
               <div class="non-checkbox">Miserable (
                 <input type="text" name="attr_misery" spellcheck="false"/>&nbsp;). You don't recover HP from rest.
@@ -87,7 +89,9 @@
             </div>
             <div class="condition-row drunk"> 
               <div class="checkbox">
-                <input type="checkbox" name="attr_drunk"/>
+                <label class="check-container">
+                  <input type="checkbox" name="attr_drunk"/><span class="checkmark">          </span>
+                </label>
               </div>
               <div class="non-checkbox">
                 Drunk.
@@ -290,7 +294,9 @@
                   <div class="stat-block"> 
                     <label>STOLEN </label>
                     <div class="horseshoe">
-                      <input type="text" inputmode="numeric" name="attr_horse_stolen" placeholder="0"/>
+                      <label class="check-container">
+                        <input type="checkbox" name="attr_horse_stolen"/><span class="checkmark"></span>
+                      </label>
                     </div>
                   </div>
                   <div class="stat-block"> 

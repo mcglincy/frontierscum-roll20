@@ -1,0 +1,146 @@
+.scumsheet-body
+  .name-block
+    .fields 
+      .field-row
+        label NAME
+        input(type='text', name='attr_character_name', placeholder='Kid Pomade', spellcheck='false')
+      .field-row
+        label A
+        input(type='text', name='attr_class', placeholder='Drifter', spellcheck='false')
+      .field-row
+        label WANTED FOR
+        input(type='text', name='attr_wanted_for', placeholder='Repeated fraud', spellcheck='false')
+    .rewards
+      label REWARDS 
+      textarea(name='attr_rewards')
+  .abilities-block
+    .ability-col
+      .ability.grit
+        .top-label.name Grit
+        .value
+          input(type='text', inputmode='numeric', name='attr_grit', placeholder=0)
+      .ability.slick
+        .top-label.name Slick
+        .value
+          input(type='text', inputmode='numeric', name='attr_slick', placeholder=0)
+      .ability.wits
+        .top-label.name Wits
+        .value
+          input(type='text', inputmode='numeric', name='attr_wits', placeholder=0)
+      .ability.luck
+        .top-label.name Luck
+        .value
+          input(type='text', inputmode='numeric', name='attr_luck', placeholder=0)          
+    .portrait-col
+      .portrait-inner
+        img(name='attr_character_avatar')
+    .condition-col
+      .top-label.conditions-and-notes Conditions & Notes
+      .condition-row.miserable 
+        .checkbox
+          label(class='check-container')
+            input(type='checkbox' name='attr_miserable')
+            span(class='checkmark')        
+        .non-checkbox
+          | Miserable (
+          input(type='text', name='attr_misery', spellcheck='false')
+          | &nbsp;). You don't recover HP from rest.
+      .condition-row.drunk 
+        .checkbox
+          label(class='check-container')
+            input(type='checkbox' name='attr_drunk')
+            span(class='checkmark')           
+        .non-checkbox
+          | Drunk.
+          | Swap your 
+          input(type='text', name='attr_drunk_stat_1', spellcheck='false')
+          | &nbsp;and
+          input(type='text', name='attr_drunk_stat_2', spellcheck='false')
+          | &nbsp;until sober.
+      .notes
+        textarea(name='attr_notes_1', placeholder="Notes and such", spellcheck='false')
+      .notes
+        textarea(name='attr_notes_2', placeholder="More of 'em", spellcheck='false')
+
+  .hp-block 
+    .stat-block.hp 
+      .name 
+        | HP
+      .value 
+        input(type='text', inputmode='numeric', name='attr_hp', placeholder=0)
+    .stat-block.max-hp 
+      .name 
+        | MAX HP
+      .value 
+        input(type='text', inputmode='numeric', name='attr_hp_max', placeholder=0)
+    .stat-block.aces 
+      .name 
+        | ACES
+      .value 
+        input(type='text', inputmode='numeric', name='attr_aces', placeholder=0)
+
+  .equipment-block
+    .eq-col-1
+      .eq-section.on-your-head
+        .top-label
+          | ON YOUR HEAD
+        .eq-row
+          input(type='text', name='attr_head')
+      .eq-section.skills
+        .skills-label
+          | SKILLS
+        .eq-row
+          input(type='text', name='attr_skills_1')
+        .eq-row
+          input(type='text', name='attr_skills_2')
+        .eq-row
+          input(type='text', name='attr_skills_3')
+        .eq-row
+          input(type='text', name='attr_skills_4')
+        .eq-row
+          input(type='text', name='attr_skills_5')
+        .eq-row
+          input(type='text', name='attr_skills_6')
+    .eq-col-2
+      .eq-section.on-your-belt
+        .top-label
+          | ON YOUR BELT
+        .eq-row
+          input(type='text', name='attr_belt_1')
+        .eq-row
+          input(type='text', name='attr_belt_2')
+        .eq-row
+          input(type='text', name='attr_belt_3')
+      .eq-section.on-your-back
+        .top-label
+          | ON YOUR BACK
+        .eq-row
+          input(type='text', name='attr_back_1')
+        .eq-row
+          input(type='text', name='attr_back_2')
+        .eq-row
+          input(type='text', name='attr_back_3')
+    .eq-col-3 
+      .eq-section.in-your-pockets
+        .top-label
+          | IN YOUR POCKETS
+        .eq-row
+          input(type='text', name='attr_pockets_1')
+        .eq-row
+          input(type='text', name='attr_pockets_2')
+        .eq-row
+          input(type='text', name='attr_pockets_3')
+        .eq-row
+          input(type='text', name='attr_pockets_4')
+        .eq-row
+          input(type='text', name='attr_pockets_5')
+        .eq-row
+          input(type='text', name='attr_pockets_6')
+        .eq-row
+          input(type='text', name='attr_pockets_7')
+        .eq-row
+          input(type='text', name='attr_pockets_8')
+        .eq-row
+          input(type='text', name='attr_pockets_9')
+        .eq-row
+          input(type='text', name='attr_pockets_10')

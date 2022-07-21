@@ -89,6 +89,13 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   background-color: transparent;
 }
 
+.frontierscum {
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Style the checkmark/indicator */
+}
 .frontierscum input[type=number],
 .frontierscum input[type=text] {
   border: 0;
@@ -120,6 +127,46 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   padding: 0;
   width: unset;
 }
+.frontierscum .check-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.frontierscum .check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.frontierscum .checkmark {
+  position: absolute;
+  top: -3px;
+  left: 12px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 1px dotted black;
+  font-size: 2rem;
+}
+.frontierscum .check-container input:checked ~ .checkmark {
+  background-color: black;
+}
+.frontierscum .check-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.frontierscum .check-container input:checked ~ .checkmark:after {
+  display: block;
+}
 
 .charsheet .frontierscum .scumsheet-header {
   align-items: center;
@@ -144,6 +191,13 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .charsheet .frontierscum .scumsheet-header .dead-or-alive {
   font-family: "Satisfy", cursive;
   font-size: 1.8rem;
+}
+.charsheet .frontierscum .scumsheet-header .dead-or-alive label {
+  display: inline;
+}
+.charsheet .frontierscum .scumsheet-header .dead-or-alive label .checkmark {
+  top: 5px;
+  left: 15px;
 }
 
 .frontierscum .scumsheet-body {
@@ -271,6 +325,10 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col .condition-row .non-checkbox input {
   width: 60px;
+}
+.frontierscum .scumsheet-body .abilities-block .condition-col .condition-row .checkmark {
+  top: 5px;
+  left: 5px;
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col .drunk {
   border-top: 2px solid black;
