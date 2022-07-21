@@ -6,6 +6,7 @@
     background: transparent;
     border-bottom: $dotted;
     font-family: $mono-font;
+    font-size: 1.8rem;
     text-align: center;
   }
 
@@ -13,6 +14,7 @@
     background-color: $light-gray;
     border: none;
     font-family: $mono-font;
+    font-size: 1.8rem;
     resize: none;
   }
 
@@ -20,8 +22,17 @@
     background-color: black;
     color: white;
     font-family: $label-font;
-    font-size: 1.3em;
+    font-size: 2.5rem;
     text-align: center;
     text-transform: uppercase;
   }
+
+  // undo some Roll20 label styles
+  // TODO: where should this live?
+  label {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    width: unset;
+  }  
 }

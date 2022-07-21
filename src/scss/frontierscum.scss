@@ -1,9 +1,10 @@
 @import 'common/vars';
+@import 'common/reset';
+@import 'common/globals';
 @import 'common/input';
 
-@import 'charsheet/header';
-@import 'charsheet/body';
+@import 'scumsheet/header';
+@import 'scumsheet/body';
 
 @import 'horsesheet/header';
 @import 'horsesheet/body';
-
