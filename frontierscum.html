@@ -47,26 +47,34 @@
         </div>
         <div class="abilities-block">
           <div class="ability-col">
-            <div class="ability grit">
-              <div class="top-label name">Grit</div>
+            <div class="ability">
+              <div class="top-label name"> 
+                <button class="sheet-blank-button ability-button" name="abil" type="roll" value="&amp;{template:abilitycheck} {{ability=grit}} {{roll=[[1d20+@{grit}]]}}">grit</button>
+              </div>
               <div class="value">
                 <input type="text" inputmode="numeric" name="attr_grit" placeholder="0"/>
               </div>
             </div>
-            <div class="ability slick">
-              <div class="top-label name">Slick</div>
+            <div class="ability">
+              <div class="top-label name"> 
+                <button class="sheet-blank-button ability-button" name="abil" type="roll" value="&amp;{template:abilitycheck} {{ability=slick}} {{roll=[[1d20+@{slick}]]}}">slick</button>
+              </div>
               <div class="value">
                 <input type="text" inputmode="numeric" name="attr_slick" placeholder="0"/>
               </div>
             </div>
-            <div class="ability wits">
-              <div class="top-label name">Wits</div>
+            <div class="ability">
+              <div class="top-label name"> 
+                <button class="sheet-blank-button ability-button" name="abil" type="roll" value="&amp;{template:abilitycheck} {{ability=wits}} {{roll=[[1d20+@{wits}]]}}">wits</button>
+              </div>
               <div class="value">
                 <input type="text" inputmode="numeric" name="attr_wits" placeholder="0"/>
               </div>
             </div>
-            <div class="ability luck">
-              <div class="top-label name">Luck</div>
+            <div class="ability">
+              <div class="top-label name"> 
+                <button class="sheet-blank-button ability-button" name="abil" type="roll" value="&amp;{template:abilitycheck} {{ability=luck}} {{roll=[[1d20+@{luck}]]}}">luck</button>
+              </div>
               <div class="value">
                 <input type="text" inputmode="numeric" name="attr_luck" placeholder="0"/>
               </div>
@@ -330,3 +338,13 @@
     </div>
   </main>
 </div>
+<rolltemplate class="sheet-rolltemplate-abilitycheck">
+  <div class="sheet-template-container"> 
+    <div class="sheet-template-header">Check {{ability}}</div>
+    <div class="sheet-template-row"> 
+      <div class="sheet-template-col">
+         Y'all rolled: &nbsp; {{roll}}</div>
+    </div>
+    <div class="sheet-template-row"> <span class="sheet-template-desc"></span></div>
+  </div>
+</rolltemplate>

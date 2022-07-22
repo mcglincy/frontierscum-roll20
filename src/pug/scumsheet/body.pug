@@ -15,22 +15,12 @@
       textarea(name='attr_rewards')
   .abilities-block
     .ability-col
-      .ability.grit
-        .top-label.name Grit
-        .value
-          input(type='text', inputmode='numeric', name='attr_grit', placeholder=0)
-      .ability.slick
-        .top-label.name Slick
-        .value
-          input(type='text', inputmode='numeric', name='attr_slick', placeholder=0)
-      .ability.wits
-        .top-label.name Wits
-        .value
-          input(type='text', inputmode='numeric', name='attr_wits', placeholder=0)
-      .ability.luck
-        .top-label.name Luck
-        .value
-          input(type='text', inputmode='numeric', name='attr_luck', placeholder=0)          
+      each abil in ['grit', 'slick', 'wits', 'luck']
+        .ability
+          .top-label.name 
+            button(class='sheet-blank-button ability-button', name='abil', type='roll', value=`&{template:abilitycheck} {{ability=${abil}}} {{roll=[[1d20+@{${abil}}]]}}`)=abil
+          .value
+            input(type='text', inputmode='numeric', name=`attr_${abil}`, placeholder=0)
     .portrait-col
       .portrait-inner
         img(name='attr_character_avatar')

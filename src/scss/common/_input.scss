@@ -85,4 +85,8 @@
   .check-container input:checked ~ .checkmark:after {
     display: block;
   } 
+
+  button.sheet-blank-button.ability-button {
+    text-transform: uppercase;
+  }
 }

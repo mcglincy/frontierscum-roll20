@@ -89,6 +89,23 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   background-color: transparent;
 }
 
+ul.nav.nav-tabs li a {
+  font-family: "Smokum", cursive;
+  font-size: 2rem;
+}
+
+div.attributesabilities.tab-pane h3, div.attributesabilities.tab-pane div.heading {
+  font-size: 2rem;
+}
+div.attributesabilities.tab-pane div.attrname, div.attributesabilities.tab-pane input {
+  font-size: 1.5rem;
+}
+
+button[type=roll].sheet-blank-button.ability-button {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
 .scum, .horse {
   display: none;
 }
@@ -192,6 +209,9 @@ input[name*=sheet_mode][value=horse] ~ * .horse {
 .frontierscum .check-container input:checked ~ .checkmark:after {
   display: block;
 }
+.frontierscum button.sheet-blank-button.ability-button {
+  text-transform: uppercase;
+}
 
 body.sheet-darkmode .charsheet {
   background-color: black;
@@ -276,6 +296,50 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .eq-section.skills .eq-row {
   border-left: 2px solid white;
   border-right: 2px solid white;
+}
+
+.sheet-rolltemplate-abilitycheck {
+  background-color: white;
+  border: 2px solid black;
+  font-family: "Inconsolata", monospace;
+}
+.sheet-rolltemplate-abilitycheck .sheet-template-container {
+  display: flex;
+  flex-direction: column;
+}
+.sheet-rolltemplate-abilitycheck .sheet-template-container .sheet-template-header {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex: 0 0 30px;
+  font-family: "Smokum", cursive;
+  font-size: 2rem;
+  justify-content: center;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.sheet-rolltemplate-abilitycheck .sheet-template-container .sheet-template-row {
+  display: flex;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+.sheet-rolltemplate-abilitycheck .sheet-template-container .sheet-template-row .sheet-template-col {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.sheet-rolltemplate-darkmode.sheet-rolltemplate-abilitycheck {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+}
+.sheet-rolltemplate-darkmode.sheet-rolltemplate-abilitycheck .sheet-template-container .sheet-template-header {
+  background-color: white;
+  color: black;
 }
 
 .charsheet .frontierscum .scumsheet-header {
