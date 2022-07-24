@@ -7,7 +7,7 @@
     "start": "run-p compile:* postcss",
     "compile:pug": "npx pug3 src/pug/frontierscum.pug --out . -P -w",
     "compile:sass": "npx sass src/scss/frontierscum.scss frontierscum.raw.css --no-source-map --no-charset --watch",
-    "postcss": "npx postcss frontierscum.raw.css -o frontierscum.css --use autoprefixer --watch --verbose",
+    "postcss": "npx postcss frontierscum.raw.css -o frontierscum.css --use autoprefixer --watch --verbose --no-map",
     "format": "prettier --write src/**/*.js"
   },
   "author": "mcglintlock",
