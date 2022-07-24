@@ -14,7 +14,7 @@
     background-color: $light-gray;
     border: none;
     font-family: $mono-font;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     padding: 2px;
     resize: none;
   }
@@ -26,6 +26,9 @@
     font-size: 2.5rem;
     text-align: center;
     text-transform: uppercase;
+    span {
+      font-size: 2.5rem;
+    }
   }
 
   // undo some Roll20 label styles

@@ -1,18 +1,24 @@
 .scumsheet-header
-  .fs-logo FRONTIER SCUM
-  .wanted WANTED
+  .fs-logo(data-i18n="frontier_scum") FRONTIER SCUM
+  .wanted(data-i18n="wanted") WANTED
   .dead-or-alive
     label(class='check-container')
       input(type='radio' name='dead_or_alive', value='dead_or_alive', checked='true')
       span(class='checkmark')   
-      | &nbsp;Dead or Alive&nbsp;
+      | &nbsp;
+      span(data-i18n="dead_or_alive") Dead or Alive
+      | &nbsp;
     | / 
     label(class='check-container')
       input(type='radio', name='dead_or_alive', value='dead')
       span(class='checkmark')   
-      | &nbsp;Dead&nbsp;
+      | &nbsp;
+      span(data-i18n="dead") Dead
+      | &nbsp;
     | /
     label(class='check-container')
       input(type='radio', name='dead_or_alive', value='alive')
       span(class='checkmark')   
-      | &nbsp;Alive&nbsp;
+      | &nbsp;
+      span(data-i18n="alive") Alive
+      | &nbsp;

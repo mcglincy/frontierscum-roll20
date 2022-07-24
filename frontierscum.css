@@ -102,8 +102,9 @@ div.attributesabilities.tab-pane div.attrname, div.attributesabilities.tab-pane 
 }
 
 button[type=roll].sheet-blank-button.ability-button {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
+  padding: 0;
 }
 
 .scum, .horse {
@@ -151,7 +152,7 @@ input[name*=sheet_mode][value=horse] ~ * .horse {
   background-color: #eeeeee;
   border: none;
   font-family: "Inconsolata", monospace;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 2px;
   resize: none;
 }
@@ -162,6 +163,9 @@ input[name*=sheet_mode][value=horse] ~ * .horse {
   font-size: 2.5rem;
   text-align: center;
   text-transform: uppercase;
+}
+.frontierscum .top-label span {
+  font-size: 2.5rem;
 }
 .frontierscum label {
   display: inline;
@@ -372,6 +376,9 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   top: 5px;
   left: 15px;
 }
+.charsheet .frontierscum .scumsheet-header .dead-or-alive label span {
+  font-size: 1.8rem;
+}
 
 .frontierscum .scumsheet-body {
   display: flex;
@@ -410,8 +417,8 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   font-size: 2rem;
 }
 .frontierscum .scumsheet-body .name-block .rewards textarea {
-  height: 55px;
-  width: 105px;
+  height: 80px;
+  width: 115px;
 }
 .frontierscum .scumsheet-body .abilities-block {
   display: flex;
@@ -435,7 +442,7 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 .frontierscum .scumsheet-body .abilities-block .ability-col .ability .name {
   background-color: black;
   color: white;
-  flex: 0 0 30px;
+  flex: 0 0 38px;
   width: 100%;
 }
 .frontierscum .scumsheet-body .abilities-block .ability-col .ability .value {
@@ -470,18 +477,19 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   width: 272px;
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col {
+  border: 2px solid black;
   display: flex;
   margin-left: 2px;
   flex: 0 0 314px;
   flex-direction: column;
-  border: 2px solid black;
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col .conditions-and-notes {
   flex: 0 0 30px;
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col .condition-row {
   display: flex;
-  flex: 0 0 44px;
+  flex: 0 0 57px;
+  padding-top: 4px;
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col .condition-row .checkbox {
   display: flex;
@@ -492,10 +500,14 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 .frontierscum .scumsheet-body .abilities-block .condition-col .condition-row .non-checkbox {
   flex: 1;
   font-family: "Inconsolata", monospace;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col .condition-row .non-checkbox input {
-  width: 60px;
+  font-size: 1.4rem;
+  width: 70px;
+}
+.frontierscum .scumsheet-body .abilities-block .condition-col .condition-row .non-checkbox span {
+  font-size: 1.4rem;
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col .condition-row .checkmark {
   top: 5px;
@@ -506,7 +518,7 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col .notes {
   border-top: 2px solid black;
-  flex: 0 0 55px;
+  flex: 1;
   padding: 4px;
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col .notes textarea {
@@ -528,9 +540,10 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 .frontierscum .scumsheet-body .hp-block .stat-block input {
   width: 100px;
 }
-.frontierscum .scumsheet-body .hp-block .stat-block .name {
+.frontierscum .scumsheet-body .hp-block .stat-block .name span {
   font-family: "Ultra", serif;
   font-size: 2.2rem;
+  text-transform: uppercase;
 }
 .frontierscum .scumsheet-body .hp-block .stat-block .value input {
   font-size: 2.2rem;
@@ -580,11 +593,13 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 .frontierscum .scumsheet-body .equipment-block .eq-section.skills .skills-label {
   border-bottom: 2px solid black;
   flex: 0 0 30px;
-  font-family: "Ultra", serif;
-  font-size: 1.9rem;
   padding-top: 0.5rem;
   text-align: center;
   line-height: 2rem;
+}
+.frontierscum .scumsheet-body .equipment-block .eq-section.skills .skills-label span {
+  font-family: "Ultra", serif;
+  font-size: 1.9rem;
 }
 .frontierscum .scumsheet-body .equipment-block .eq-section.skills .eq-row {
   border-left: 2px solid black;
