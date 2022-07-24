@@ -171,6 +171,7 @@ input[name*=sheet_mode][value=horse] ~ * .horse {
   display: inline;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
   width: unset;
 }
 .frontierscum .check-container {
@@ -378,6 +379,7 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 }
 .charsheet .frontierscum .scumsheet-header .dead-or-alive label span {
   font-size: 1.8rem;
+  text-transform: capitalize;
 }
 
 .frontierscum .scumsheet-body {
@@ -600,6 +602,7 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 .frontierscum .scumsheet-body .equipment-block .eq-section.skills .skills-label span {
   font-family: "Ultra", serif;
   font-size: 1.9rem;
+  text-transform: uppercase;
 }
 .frontierscum .scumsheet-body .equipment-block .eq-section.skills .eq-row {
   border-left: 2px solid black;
