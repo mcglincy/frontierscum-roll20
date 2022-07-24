@@ -20,7 +20,7 @@
           .top-label.name 
             button(class='sheet-blank-button ability-button', name='abil', type='roll', value=`&{template:abilitycheck} {{ability=${abil}}} {{roll=[[1d20+@{${abil}}]]}}`)=abil
           .value
-            input(type='text', inputmode='numeric', name=`attr_${abil}`, placeholder=0)
+            input(type='number', name=`attr_${abil}`, placeholder=0)
     .portrait-col
       .portrait-inner
         img(name='attr_character_avatar')
@@ -57,17 +57,17 @@
       .name 
         | HP
       .value 
-        input(type='text', inputmode='numeric', name='attr_hp', placeholder=0)
+        input(type='number', name='attr_hp', placeholder=0)
     .stat-block.max-hp 
       .name 
         | MAX HP
       .value 
-        input(type='text', inputmode='numeric', name='attr_hp_max', placeholder=0)
+        input(type='number', name='attr_hp_max', placeholder=0)
     .stat-block.aces 
       .name 
         | ACES
       .value 
-        input(type='text', inputmode='numeric', name='attr_aces', placeholder=0)
+        input(type='number', name='attr_aces', placeholder=0)
 
   .equipment-block
     .eq-col-1
