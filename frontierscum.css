@@ -94,6 +94,13 @@ ul.nav.nav-tabs li a {
   font-size: 2rem;
 }
 
+div.bioinfo.tab-pane label strong {
+  font-size: 2em;
+}
+div.bioinfo.tab-pane .content p {
+  font-size: 1.5rem;
+}
+
 div.attributesabilities.tab-pane h3, div.attributesabilities.tab-pane div.heading {
   font-size: 2rem;
 }

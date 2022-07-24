@@ -3,6 +3,15 @@ ul.nav.nav-tabs li a {
   font-size: 2.0rem;  
 }
 
+div.bioinfo.tab-pane {
+  label strong {
+    font-size: 2.0em;
+  }
+  .content p {
+    font-size: 1.5rem;
+  }
+}
+
 div.attributesabilities.tab-pane {
   h3, div.heading {
     font-size: 2.0rem;
